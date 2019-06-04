@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN" monitorInterval="30">
+    <!-- Logging Properties -->
+    <Properties>
+        <Property name="LOG_PATTERN">%d{yyyy-MM-dd HH:mm:ss} [%-5p] %c{1}:%L - %m%n</Property>
+		<!-- Prod -->
+        <Property name="APP_LOG_ROOT">/jboss/jboss-eap-7.1/Aplicaciones/netcas/archivos</Property>
+		<!-- Devt -->
+<!--         <Property name="APP_LOG_ROOT">/JBOSS2/jboss-eap-7.1/Aplicaciones/netcas/archivos</Property> -->
+    </Properties>
+     
+    <Appenders>
+        <!-- Console Appender -->
+        <Console name="Console" target="SYSTEM_OUT" follow="true">
+            <PatternLayout pattern="${LOG_PATTERN}"/>
+        </Console>
+         
+        <!-- File Appenders on need basis -->         
+        <RollingFile name="errorLogCOR" fileName="${APP_LOG_ROOT}/errorLogCOR.log"
+            filePattern="${APP_LOG_ROOT}/app-info-%d{yyyy-MM-dd}-%i.log" >
+            <LevelRangeFilter minLevel="ERROR" maxLevel="ERROR" onMatch="ACCEPT" onMismatch="DENY"/>
+            <PatternLayout pattern="${LOG_PATTERN}"/>
+            <Policies>
+                <SizeBasedTriggeringPolicy size="99500KB" />
+            </Policies>
+            <DefaultRolloverStrategy max="10"/>
+        </RollingFile>
+         
+        <RollingFile name="errorLogRI" fileName="${APP_LOG_ROOT}/errorLogRI.log"
+            filePattern="${APP_LOG_ROOT}/app-error-%d{yyyy-MM-dd}-%i.log" >
+            <LevelRangeFilter minLevel="ERROR" maxLevel="ERROR" onMatch="ACCEPT" onMismatch="DENY"/>
+            <PatternLayout pattern="${LOG_PATTERN}"/>
+            <Policies>
+                <SizeBasedTriggeringPolicy size="99500KB" />
+            </Policies>
+            <DefaultRolloverStrategy max="10"/>
+        </RollingFile>
+         
+        <RollingFile name="netcasLog" fileName="${APP_LOG_ROOT}/netcasLog.log"
+            filePattern="${APP_LOG_ROOT}/app-perf-%d{yyyy-MM-dd}-%i.log" >
+            <PatternLayout pattern="${LOG_PATTERN}"/>
+            <Policies>
+                <SizeBasedTriggeringPolicy size="99500KB" />
+            </Policies>
+            <DefaultRolloverStrategy max="10"/>
+        </RollingFile>
+         
+    </Appenders>
+ 
+    <Loggers>
+        <Logger name="mx.com.telcel.oym.netcas.service.impl.TestingServiceImpl" additivity="false" level="error">
+            <AppenderRef ref="errorLogRI" />
+            <AppenderRef ref="Console"  />
+        </Logger>
+<!--         <Logger name="mx.com.telcel.oym.netcas.controller.ProfilesTestController" additivity="false" level="info"> -->
+<!--             <AppenderRef ref="errorLogRI" /> -->
+<!--             <AppenderRef ref="Console"  /> -->
+<!--         </Logger> -->
+        
+         
+        <Logger name="mx.com" additivity="false" level="error">
+            <AppenderRef ref="netcasLog" />
+            <AppenderRef ref="errorLogCOR" />
+            <AppenderRef ref="Console"/>
+        </Logger>
+        
+        <Logger name="mx.com.telcel.oym.netcas.test" additivity="false" level="info">
+            <AppenderRef ref="Console"/>
+        </Logger>
+        
+        <Root additivity="false" level="error">
+            <AppenderRef ref="Console"/>
+        </Root>
+ 
+    </Loggers>
+ 
+</Configuration>

@@ -1,0 +1,1156 @@
+2019-06-04 12:36:57,523 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-5) WFLYDS0013: Inició FileSystemDeploymentService para el directorio C:\ajboss-eap-7.2\standalone\deployments
+2019-06-04 12:36:57,578 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0012: El servidor ha iniciado default-server.
+2019-06-04 12:36:57,585 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0018: Host default-host iniciando
+2019-06-04 12:36:57,594 INFO  [org.jboss.remoting] (MSC service thread 1-1) JBoss Remoting version 5.0.8.Final-redhat-1
+2019-06-04 12:36:57,603 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-2) WFLYSRV0027: Iniciando la implementación de netcas.war" (runtime-name: "netcas.war")
+2019-06-04 12:36:57,695 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-2) WFLYJCA0001: Fuente de datos enlazados [java:jboss/datasources/ExampleDS]
+2019-06-04 12:36:58,111 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0006: Undertow HTTP oyente default escuchando en 127.0.0.1:8080
+2019-06-04 12:36:59,535 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) WFLYUT0006: Undertow HTTPS oyente https escuchando en 127.0.0.1:8443
+2019-06-04 12:37:00,161 INFO  [org.jboss.ws.common.management] (MSC service thread 1-2) JBWS022052: Starting JBossWS 5.2.4.Final-redhat-00001 (Apache CXF 3.2.5.redhat-00001) 
+2019-06-04 12:37:05,790 WARN  [org.jboss.as.ee] (MSC service thread 1-6) WFLYEE0007: No se está instalando el componente opcional org.springframework.http.server.reactive.ServletServerHttpRequest$RequestAsyncListener debido a una excepción (active el nivel de registro DEBUG para ver la razón)
+2019-06-04 12:37:05,796 WARN  [org.jboss.as.ee] (MSC service thread 1-6) WFLYEE0007: No se está instalando el componente opcional org.springframework.http.server.ServletServerHttpAsyncRequestControl debido a una excepción (active el nivel de registro DEBUG para ver la razón)
+2019-06-04 12:37:05,797 WARN  [org.jboss.as.ee] (MSC service thread 1-6) WFLYEE0007: No se está instalando el componente opcional org.springframework.web.context.request.async.StandardServletAsyncWebRequest debido a una excepción (active el nivel de registro DEBUG para ver la razón)
+2019-06-04 12:37:05,816 WARN  [org.jboss.as.ee] (MSC service thread 1-6) WFLYEE0007: No se está instalando el componente opcional org.springframework.http.server.reactive.ServletServerHttpResponse$ResponseAsyncListener debido a una excepción (active el nivel de registro DEBUG para ver la razón)
+2019-06-04 12:37:05,817 WARN  [org.jboss.as.ee] (MSC service thread 1-6) WFLYEE0007: No se está instalando el componente opcional org.springframework.http.server.reactive.ServletHttpHandlerAdapter$HandlerResultAsyncListener debido a una excepción (active el nivel de registro DEBUG para ver la razón)
+2019-06-04 12:37:06,434 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-6) WFLYJCA0004: Implementación del controlador que cumple con los requerimientos de JDBC class oracle.jdbc.OracleDriver (versión 12.1)
+2019-06-04 12:37:06,435 WARN  [org.jboss.weld.deployer] (MSC service thread 1-6) WFLYWELD0013: La implementación netcas.war contiene anotaciones de CDI, pero no se encontró ningún archivo bean (beans.xml o clase con anotaciones de definición de beans).
+2019-06-04 12:37:06,706 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-4) WFLYJCA0018: Servicio de controlador iniciado con driver-name = netcas.war_oracle.jdbc.OracleDriver_12_1
+2019-06-04 12:37:07,695 INFO  [org.infinispan.factories.GlobalComponentRegistry] (MSC service thread 1-2) ISPN000128: Infinispan version: Infinispan 'Estrella Galicia' 9.3.3.Final-redhat-00001
+2019-06-04 12:37:08,159 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 73) WFLYCLINF0002: Inició client-mappings caché del contenedor ejb 
+2019-06-04 12:37:08,707 INFO  [io.undertow.servlet] (ServerService Thread Pool -- 76) 2 Spring WebApplicationInitializers detected on classpath
+2019-06-04 12:37:09,407 INFO  [javax.enterprise.resource.webcontainer.jsf.config] (ServerService Thread Pool -- 76) Inicializando Mojarra 2.3.5.SP2-redhat-00001 para el contexto '/netcas'
+2019-06-04 12:37:13,812 INFO  [io.undertow.servlet] (ServerService Thread Pool -- 76) Initializing Spring root WebApplicationContext
+2019-06-04 12:37:13,813 INFO  [org.springframework.web.context.ContextLoader] (ServerService Thread Pool -- 76) Root WebApplicationContext: initialization started
+2019-06-04 12:37:15,714 WARN  [org.springframework.web.context.support.AnnotationConfigWebApplicationContext] (ServerService Thread Pool -- 76) Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'security': Unsatisfied dependency expressed through field 'authProvider'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'authenticationProviderServiceImpl': Unsatisfied dependency expressed through field 'userService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'use': Unsatisfied dependency expressed through field 'tUsuarioDAO'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'TUsuarioDAOImpl': Injection of persistence dependencies failed; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'getSessionFactory' defined in mx.com.telcel.oym.netcas.config.Hibernate: Unsatisfied dependency expressed through method 'getSessionFactory' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in mx.com.telcel.oym.netcas.config.Hibernate: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [javax.sql.DataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.jdbc.datasource.lookup.DataSourceLookupFailureException: Failed to look up JNDI DataSource with name 'java:jboss/jdbc/poolOrclNetcasProd'; nested exception is javax.naming.NameNotFoundException: jdbc/poolOrclNetcasProd -- service jboss.naming.context.java.jboss.jdbc.poolOrclNetcasProd
+2019-06-04 12:37:15,717 ERROR [org.springframework.web.context.ContextLoader] (ServerService Thread Pool -- 76) Context initialization failed: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'security': Unsatisfied dependency expressed through field 'authProvider'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'authenticationProviderServiceImpl': Unsatisfied dependency expressed through field 'userService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'use': Unsatisfied dependency expressed through field 'tUsuarioDAO'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'TUsuarioDAOImpl': Injection of persistence dependencies failed; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'getSessionFactory' defined in mx.com.telcel.oym.netcas.config.Hibernate: Unsatisfied dependency expressed through method 'getSessionFactory' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in mx.com.telcel.oym.netcas.config.Hibernate: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [javax.sql.DataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.jdbc.datasource.lookup.DataSourceLookupFailureException: Failed to look up JNDI DataSource with name 'java:jboss/jdbc/poolOrclNetcasProd'; nested exception is javax.naming.NameNotFoundException: jdbc/poolOrclNetcasProd -- service jboss.naming.context.java.jboss.jdbc.poolOrclNetcasProd
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:598)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:376)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1377)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:575)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:498)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:848)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:865)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:548)
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:400)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:291)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:103)
+	at io.undertow.servlet.core.ApplicationListeners.contextInitialized(ApplicationListeners.java:187)
+	at io.undertow.servlet.core.DeploymentManagerImpl$1.call(DeploymentManagerImpl.java:216)
+	at io.undertow.servlet.core.DeploymentManagerImpl$1.call(DeploymentManagerImpl.java:185)
+	at io.undertow.servlet.core.ServletRequestContextThreadSetupAction$1.call(ServletRequestContextThreadSetupAction.java:42)
+	at io.undertow.servlet.core.ContextClassLoaderSetupAction$1.call(ContextClassLoaderSetupAction.java:43)
+	at org.wildfly.extension.undertow.security.SecurityContextThreadSetupAction.lambda$create$0(SecurityContextThreadSetupAction.java:105)
+	at org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1502)
+	at org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1502)
+	at org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1502)
+	at org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1502)
+	at org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1502)
+	at io.undertow.servlet.core.DeploymentManagerImpl.deploy(DeploymentManagerImpl.java:250)
+	at org.wildfly.extension.undertow.deployment.UndertowDeploymentService.startContext(UndertowDeploymentService.java:96)
+	at org.wildfly.extension.undertow.deployment.UndertowDeploymentService$1.run(UndertowDeploymentService.java:78)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.jboss.threads.ContextClassLoaderSavingRunnable.run(ContextClassLoaderSavingRunnable.java:35)
+	at org.jboss.threads.EnhancedQueueExecutor.safeRun(EnhancedQueueExecutor.java:1985)
+	at org.jboss.threads.EnhancedQueueExecutor$ThreadBody.doRunTask(EnhancedQueueExecutor.java:1487)
+	at org.jboss.threads.EnhancedQueueExecutor$ThreadBody.run(EnhancedQueueExecutor.java:1378)
+	at java.lang.Thread.run(Unknown Source)
+	at org.jboss.threads.JBossThread.run(JBossThread.java:485)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'authenticationProviderServiceImpl': Unsatisfied dependency expressed through field 'userService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'use': Unsatisfied dependency expressed through field 'tUsuarioDAO'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'TUsuarioDAOImpl': Injection of persistence dependencies failed; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'getSessionFactory' defined in mx.com.telcel.oym.netcas.config.Hibernate: Unsatisfied dependency expressed through method 'getSessionFactory' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in mx.com.telcel.oym.netcas.config.Hibernate: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [javax.sql.DataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.jdbc.datasource.lookup.DataSourceLookupFailureException: Failed to look up JNDI DataSource with name 'java:jboss/jdbc/poolOrclNetcasProd'; nested exception is javax.naming.NameNotFoundException: jdbc/poolOrclNetcasProd -- service jboss.naming.context.java.jboss.jdbc.poolOrclNetcasProd
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:598)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:376)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1377)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:575)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:498)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:273)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1241)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1168)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:595)
+	... 37 more
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'use': Unsatisfied dependency expressed through field 'tUsuarioDAO'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'TUsuarioDAOImpl': Injection of persistence dependencies failed; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'getSessionFactory' defined in mx.com.telcel.oym.netcas.config.Hibernate: Unsatisfied dependency expressed through method 'getSessionFactory' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in mx.com.telcel.oym.netcas.config.Hibernate: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [javax.sql.DataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.jdbc.datasource.lookup.DataSourceLookupFailureException: Failed to look up JNDI DataSource with name 'java:jboss/jdbc/poolOrclNetcasProd'; nested exception is javax.naming.NameNotFoundException: jdbc/poolOrclNetcasProd -- service jboss.naming.context.java.jboss.jdbc.poolOrclNetcasProd
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:598)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:376)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1377)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:575)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:498)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:273)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1241)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1168)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:595)
+	... 50 more
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'TUsuarioDAOImpl': Injection of persistence dependencies failed; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'getSessionFactory' defined in mx.com.telcel.oym.netcas.config.Hibernate: Unsatisfied dependency expressed through method 'getSessionFactory' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in mx.com.telcel.oym.netcas.config.Hibernate: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [javax.sql.DataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.jdbc.datasource.lookup.DataSourceLookupFailureException: Failed to look up JNDI DataSource with name 'java:jboss/jdbc/poolOrclNetcasProd'; nested exception is javax.naming.NameNotFoundException: jdbc/poolOrclNetcasProd -- service jboss.naming.context.java.jboss.jdbc.poolOrclNetcasProd
+	at org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor.postProcessProperties(PersistenceAnnotationBeanPostProcessor.java:359)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1377)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:575)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:498)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:273)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1241)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1168)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:595)
+	... 63 more
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'getSessionFactory' defined in mx.com.telcel.oym.netcas.config.Hibernate: Unsatisfied dependency expressed through method 'getSessionFactory' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in mx.com.telcel.oym.netcas.config.Hibernate: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [javax.sql.DataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.jdbc.datasource.lookup.DataSourceLookupFailureException: Failed to look up JNDI DataSource with name 'java:jboss/jdbc/poolOrclNetcasProd'; nested exception is javax.naming.NameNotFoundException: jdbc/poolOrclNetcasProd -- service jboss.naming.context.java.jboss.jdbc.poolOrclNetcasProd
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:767)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:509)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1287)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1126)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:538)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:498)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:224)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveNamedBean(DefaultListableBeanFactory.java:1116)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveNamedBean(DefaultListableBeanFactory.java:1081)
+	at org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor.findDefaultEntityManagerFactory(PersistenceAnnotationBeanPostProcessor.java:580)
+	at org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor.findEntityManagerFactory(PersistenceAnnotationBeanPostProcessor.java:543)
+	at org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor$PersistenceElement.resolveEntityManager(PersistenceAnnotationBeanPostProcessor.java:711)
+	at org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor$PersistenceElement.getResourceToInject(PersistenceAnnotationBeanPostProcessor.java:684)
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:180)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90)
+	at org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor.postProcessProperties(PersistenceAnnotationBeanPostProcessor.java:356)
+	... 74 more
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in mx.com.telcel.oym.netcas.config.Hibernate: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [javax.sql.DataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.jdbc.datasource.lookup.DataSourceLookupFailureException: Failed to look up JNDI DataSource with name 'java:jboss/jdbc/poolOrclNetcasProd'; nested exception is javax.naming.NameNotFoundException: jdbc/poolOrclNetcasProd -- service jboss.naming.context.java.jboss.jdbc.poolOrclNetcasProd
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:625)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:456)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1287)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1126)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:538)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:498)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:273)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1241)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1168)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:855)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:758)
+	... 92 more
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [javax.sql.DataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.jdbc.datasource.lookup.DataSourceLookupFailureException: Failed to look up JNDI DataSource with name 'java:jboss/jdbc/poolOrclNetcasProd'; nested exception is javax.naming.NameNotFoundException: jdbc/poolOrclNetcasProd -- service jboss.naming.context.java.jboss.jdbc.poolOrclNetcasProd
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:620)
+	... 106 more
+Caused by: org.springframework.jdbc.datasource.lookup.DataSourceLookupFailureException: Failed to look up JNDI DataSource with name 'java:jboss/jdbc/poolOrclNetcasProd'; nested exception is javax.naming.NameNotFoundException: jdbc/poolOrclNetcasProd -- service jboss.naming.context.java.jboss.jdbc.poolOrclNetcasProd
+	at org.springframework.jdbc.datasource.lookup.JndiDataSourceLookup.getDataSource(JndiDataSourceLookup.java:48)
+	at mx.com.telcel.oym.netcas.config.Hibernate.dataSource(Hibernate.java:29)
+	at mx.com.telcel.oym.netcas.config.Hibernate$$EnhancerBySpringCGLIB$$bdcd1a16.CGLIB$dataSource$0(<generated>)
+	at mx.com.telcel.oym.netcas.config.Hibernate$$EnhancerBySpringCGLIB$$bdcd1a16$$FastClassBySpringCGLIB$$b258c00f.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:244)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:363)
+	at mx.com.telcel.oym.netcas.config.Hibernate$$EnhancerBySpringCGLIB$$bdcd1a16.dataSource(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	... 107 more
+Caused by: javax.naming.NameNotFoundException: jdbc/poolOrclNetcasProd -- service jboss.naming.context.java.jboss.jdbc.poolOrclNetcasProd
+	at org.jboss.as.naming.ServiceBasedNamingStore.lookup(ServiceBasedNamingStore.java:106)
+	at org.jboss.as.naming.NamingContext.lookup(NamingContext.java:207)
+	at org.jboss.as.naming.NamingContext.lookup(NamingContext.java:184)
+	at org.jboss.as.naming.InitialContext$DefaultInitialContext.lookup(InitialContext.java:239)
+	at org.jboss.as.naming.NamingContext.lookup(NamingContext.java:193)
+	at org.jboss.as.naming.NamingContext.lookup(NamingContext.java:189)
+	at javax.naming.InitialContext.lookup(Unknown Source)
+	at javax.naming.InitialContext.lookup(Unknown Source)
+	at org.springframework.jndi.JndiTemplate.lambda$lookup$0(JndiTemplate.java:156)
+	at org.springframework.jndi.JndiTemplate.execute(JndiTemplate.java:91)
+	at org.springframework.jndi.JndiTemplate.lookup(JndiTemplate.java:156)
+	at org.springframework.jndi.JndiTemplate.lookup(JndiTemplate.java:178)
+	at org.springframework.jndi.JndiLocatorSupport.lookup(JndiLocatorSupport.java:96)
+	at org.springframework.jdbc.datasource.lookup.JndiDataSourceLookup.getDataSource(JndiDataSourceLookup.java:45)
+	... 118 more
+
+2019-06-04 12:37:15,745 ERROR [org.jboss.msc.service.fail] (ServerService Thread Pool -- 76) MSC000001: Failed to start service jboss.deployment.unit."netcas.war".undertow-deployment: org.jboss.msc.service.StartException in service jboss.deployment.unit."netcas.war".undertow-deployment: java.lang.RuntimeException: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'security': Unsatisfied dependency expressed through field 'authProvider'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'authenticationProviderServiceImpl': Unsatisfied dependency expressed through field 'userService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'use': Unsatisfied dependency expressed through field 'tUsuarioDAO'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'TUsuarioDAOImpl': Injection of persistence dependencies failed; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'getSessionFactory' defined in mx.com.telcel.oym.netcas.config.Hibernate: Unsatisfied dependency expressed through method 'getSessionFactory' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in mx.com.telcel.oym.netcas.config.Hibernate: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [javax.sql.DataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.jdbc.datasource.lookup.DataSourceLookupFailureException: Failed to look up JNDI DataSource with name 'java:jboss/jdbc/poolOrclNetcasProd'; nested exception is javax.naming.NameNotFoundException: jdbc/poolOrclNetcasProd -- service jboss.naming.context.java.jboss.jdbc.poolOrclNetcasProd
+	at org.wildfly.extension.undertow.deployment.UndertowDeploymentService$1.run(UndertowDeploymentService.java:81)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.jboss.threads.ContextClassLoaderSavingRunnable.run(ContextClassLoaderSavingRunnable.java:35)
+	at org.jboss.threads.EnhancedQueueExecutor.safeRun(EnhancedQueueExecutor.java:1985)
+	at org.jboss.threads.EnhancedQueueExecutor$ThreadBody.doRunTask(EnhancedQueueExecutor.java:1487)
+	at org.jboss.threads.EnhancedQueueExecutor$ThreadBody.run(EnhancedQueueExecutor.java:1378)
+	at java.lang.Thread.run(Unknown Source)
+	at org.jboss.threads.JBossThread.run(JBossThread.java:485)
+Caused by: java.lang.RuntimeException: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'security': Unsatisfied dependency expressed through field 'authProvider'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'authenticationProviderServiceImpl': Unsatisfied dependency expressed through field 'userService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'use': Unsatisfied dependency expressed through field 'tUsuarioDAO'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'TUsuarioDAOImpl': Injection of persistence dependencies failed; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'getSessionFactory' defined in mx.com.telcel.oym.netcas.config.Hibernate: Unsatisfied dependency expressed through method 'getSessionFactory' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in mx.com.telcel.oym.netcas.config.Hibernate: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [javax.sql.DataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.jdbc.datasource.lookup.DataSourceLookupFailureException: Failed to look up JNDI DataSource with name 'java:jboss/jdbc/poolOrclNetcasProd'; nested exception is javax.naming.NameNotFoundException: jdbc/poolOrclNetcasProd -- service jboss.naming.context.java.jboss.jdbc.poolOrclNetcasProd
+	at io.undertow.servlet.core.DeploymentManagerImpl.deploy(DeploymentManagerImpl.java:252)
+	at org.wildfly.extension.undertow.deployment.UndertowDeploymentService.startContext(UndertowDeploymentService.java:96)
+	at org.wildfly.extension.undertow.deployment.UndertowDeploymentService$1.run(UndertowDeploymentService.java:78)
+	... 8 more
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'security': Unsatisfied dependency expressed through field 'authProvider'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'authenticationProviderServiceImpl': Unsatisfied dependency expressed through field 'userService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'use': Unsatisfied dependency expressed through field 'tUsuarioDAO'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'TUsuarioDAOImpl': Injection of persistence dependencies failed; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'getSessionFactory' defined in mx.com.telcel.oym.netcas.config.Hibernate: Unsatisfied dependency expressed through method 'getSessionFactory' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in mx.com.telcel.oym.netcas.config.Hibernate: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [javax.sql.DataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.jdbc.datasource.lookup.DataSourceLookupFailureException: Failed to look up JNDI DataSource with name 'java:jboss/jdbc/poolOrclNetcasProd'; nested exception is javax.naming.NameNotFoundException: jdbc/poolOrclNetcasProd -- service jboss.naming.context.java.jboss.jdbc.poolOrclNetcasProd
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:598)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:376)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1377)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:575)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:498)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:848)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:865)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:548)
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:400)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:291)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:103)
+	at io.undertow.servlet.core.ApplicationListeners.contextInitialized(ApplicationListeners.java:187)
+	at io.undertow.servlet.core.DeploymentManagerImpl$1.call(DeploymentManagerImpl.java:216)
+	at io.undertow.servlet.core.DeploymentManagerImpl$1.call(DeploymentManagerImpl.java:185)
+	at io.undertow.servlet.core.ServletRequestContextThreadSetupAction$1.call(ServletRequestContextThreadSetupAction.java:42)
+	at io.undertow.servlet.core.ContextClassLoaderSetupAction$1.call(ContextClassLoaderSetupAction.java:43)
+	at org.wildfly.extension.undertow.security.SecurityContextThreadSetupAction.lambda$create$0(SecurityContextThreadSetupAction.java:105)
+	at org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1502)
+	at org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1502)
+	at org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1502)
+	at org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1502)
+	at org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1502)
+	at io.undertow.servlet.core.DeploymentManagerImpl.deploy(DeploymentManagerImpl.java:250)
+	... 10 more
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'authenticationProviderServiceImpl': Unsatisfied dependency expressed through field 'userService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'use': Unsatisfied dependency expressed through field 'tUsuarioDAO'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'TUsuarioDAOImpl': Injection of persistence dependencies failed; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'getSessionFactory' defined in mx.com.telcel.oym.netcas.config.Hibernate: Unsatisfied dependency expressed through method 'getSessionFactory' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in mx.com.telcel.oym.netcas.config.Hibernate: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [javax.sql.DataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.jdbc.datasource.lookup.DataSourceLookupFailureException: Failed to look up JNDI DataSource with name 'java:jboss/jdbc/poolOrclNetcasProd'; nested exception is javax.naming.NameNotFoundException: jdbc/poolOrclNetcasProd -- service jboss.naming.context.java.jboss.jdbc.poolOrclNetcasProd
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:598)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:376)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1377)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:575)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:498)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:273)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1241)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1168)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:595)
+	... 37 more
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'use': Unsatisfied dependency expressed through field 'tUsuarioDAO'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'TUsuarioDAOImpl': Injection of persistence dependencies failed; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'getSessionFactory' defined in mx.com.telcel.oym.netcas.config.Hibernate: Unsatisfied dependency expressed through method 'getSessionFactory' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in mx.com.telcel.oym.netcas.config.Hibernate: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [javax.sql.DataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.jdbc.datasource.lookup.DataSourceLookupFailureException: Failed to look up JNDI DataSource with name 'java:jboss/jdbc/poolOrclNetcasProd'; nested exception is javax.naming.NameNotFoundException: jdbc/poolOrclNetcasProd -- service jboss.naming.context.java.jboss.jdbc.poolOrclNetcasProd
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:598)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:376)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1377)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:575)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:498)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:273)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1241)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1168)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:595)
+	... 50 more
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'TUsuarioDAOImpl': Injection of persistence dependencies failed; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'getSessionFactory' defined in mx.com.telcel.oym.netcas.config.Hibernate: Unsatisfied dependency expressed through method 'getSessionFactory' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in mx.com.telcel.oym.netcas.config.Hibernate: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [javax.sql.DataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.jdbc.datasource.lookup.DataSourceLookupFailureException: Failed to look up JNDI DataSource with name 'java:jboss/jdbc/poolOrclNetcasProd'; nested exception is javax.naming.NameNotFoundException: jdbc/poolOrclNetcasProd -- service jboss.naming.context.java.jboss.jdbc.poolOrclNetcasProd
+	at org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor.postProcessProperties(PersistenceAnnotationBeanPostProcessor.java:359)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1377)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:575)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:498)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:273)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1241)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1168)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:595)
+	... 63 more
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'getSessionFactory' defined in mx.com.telcel.oym.netcas.config.Hibernate: Unsatisfied dependency expressed through method 'getSessionFactory' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in mx.com.telcel.oym.netcas.config.Hibernate: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [javax.sql.DataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.jdbc.datasource.lookup.DataSourceLookupFailureException: Failed to look up JNDI DataSource with name 'java:jboss/jdbc/poolOrclNetcasProd'; nested exception is javax.naming.NameNotFoundException: jdbc/poolOrclNetcasProd -- service jboss.naming.context.java.jboss.jdbc.poolOrclNetcasProd
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:767)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:509)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1287)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1126)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:538)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:498)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:224)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveNamedBean(DefaultListableBeanFactory.java:1116)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveNamedBean(DefaultListableBeanFactory.java:1081)
+	at org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor.findDefaultEntityManagerFactory(PersistenceAnnotationBeanPostProcessor.java:580)
+	at org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor.findEntityManagerFactory(PersistenceAnnotationBeanPostProcessor.java:543)
+	at org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor$PersistenceElement.resolveEntityManager(PersistenceAnnotationBeanPostProcessor.java:711)
+	at org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor$PersistenceElement.getResourceToInject(PersistenceAnnotationBeanPostProcessor.java:684)
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:180)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90)
+	at org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor.postProcessProperties(PersistenceAnnotationBeanPostProcessor.java:356)
+	... 74 more
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in mx.com.telcel.oym.netcas.config.Hibernate: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [javax.sql.DataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.jdbc.datasource.lookup.DataSourceLookupFailureException: Failed to look up JNDI DataSource with name 'java:jboss/jdbc/poolOrclNetcasProd'; nested exception is javax.naming.NameNotFoundException: jdbc/poolOrclNetcasProd -- service jboss.naming.context.java.jboss.jdbc.poolOrclNetcasProd
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:625)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:456)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1287)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1126)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:538)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:498)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:273)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1241)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1168)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:855)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:758)
+	... 92 more
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [javax.sql.DataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.jdbc.datasource.lookup.DataSourceLookupFailureException: Failed to look up JNDI DataSource with name 'java:jboss/jdbc/poolOrclNetcasProd'; nested exception is javax.naming.NameNotFoundException: jdbc/poolOrclNetcasProd -- service jboss.naming.context.java.jboss.jdbc.poolOrclNetcasProd
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:620)
+	... 106 more
+Caused by: org.springframework.jdbc.datasource.lookup.DataSourceLookupFailureException: Failed to look up JNDI DataSource with name 'java:jboss/jdbc/poolOrclNetcasProd'; nested exception is javax.naming.NameNotFoundException: jdbc/poolOrclNetcasProd -- service jboss.naming.context.java.jboss.jdbc.poolOrclNetcasProd
+	at org.springframework.jdbc.datasource.lookup.JndiDataSourceLookup.getDataSource(JndiDataSourceLookup.java:48)
+	at mx.com.telcel.oym.netcas.config.Hibernate.dataSource(Hibernate.java:29)
+	at mx.com.telcel.oym.netcas.config.Hibernate$$EnhancerBySpringCGLIB$$bdcd1a16.CGLIB$dataSource$0(<generated>)
+	at mx.com.telcel.oym.netcas.config.Hibernate$$EnhancerBySpringCGLIB$$bdcd1a16$$FastClassBySpringCGLIB$$b258c00f.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:244)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:363)
+	at mx.com.telcel.oym.netcas.config.Hibernate$$EnhancerBySpringCGLIB$$bdcd1a16.dataSource(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	... 107 more
+Caused by: javax.naming.NameNotFoundException: jdbc/poolOrclNetcasProd -- service jboss.naming.context.java.jboss.jdbc.poolOrclNetcasProd
+	at org.jboss.as.naming.ServiceBasedNamingStore.lookup(ServiceBasedNamingStore.java:106)
+	at org.jboss.as.naming.NamingContext.lookup(NamingContext.java:207)
+	at org.jboss.as.naming.NamingContext.lookup(NamingContext.java:184)
+	at org.jboss.as.naming.InitialContext$DefaultInitialContext.lookup(InitialContext.java:239)
+	at org.jboss.as.naming.NamingContext.lookup(NamingContext.java:193)
+	at org.jboss.as.naming.NamingContext.lookup(NamingContext.java:189)
+	at javax.naming.InitialContext.lookup(Unknown Source)
+	at javax.naming.InitialContext.lookup(Unknown Source)
+	at org.springframework.jndi.JndiTemplate.lambda$lookup$0(JndiTemplate.java:156)
+	at org.springframework.jndi.JndiTemplate.execute(JndiTemplate.java:91)
+	at org.springframework.jndi.JndiTemplate.lookup(JndiTemplate.java:156)
+	at org.springframework.jndi.JndiTemplate.lookup(JndiTemplate.java:178)
+	at org.springframework.jndi.JndiLocatorSupport.lookup(JndiLocatorSupport.java:96)
+	at org.springframework.jdbc.datasource.lookup.JndiDataSourceLookup.getDataSource(JndiDataSourceLookup.java:45)
+	... 118 more
+
+2019-06-04 12:37:15,754 ERROR [org.jboss.as.controller.management-operation] (Controller Boot Thread) WFLYCTL0013: Operación ("deploy") falló - dirección: ([("deployment" => "netcas.war")]) - descripción de la falla: {"WFLYCTL0080: Servicios fallidos" => {"jboss.deployment.unit.\"netcas.war\".undertow-deployment" => "java.lang.RuntimeException: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'security': Unsatisfied dependency expressed through field 'authProvider'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'authenticationProviderServiceImpl': Unsatisfied dependency expressed through field 'userService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'use': Unsatisfied dependency expressed through field 'tUsuarioDAO'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'TUsuarioDAOImpl': Injection of persistence dependencies failed; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'getSessionFactory' defined in mx.com.telcel.oym.netcas.config.Hibernate: Unsatisfied dependency expressed through method 'getSessionFactory' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in mx.com.telcel.oym.netcas.config.Hibernate: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [javax.sql.DataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.jdbc.datasource.lookup.DataSourceLookupFailureException: Failed to look up JNDI DataSource with name 'java:jboss/jdbc/poolOrclNetcasProd'; nested exception is javax.naming.NameNotFoundException: jdbc/poolOrclNetcasProd -- service jboss.naming.context.java.jboss.jdbc.poolOrclNetcasProd
+    Caused by: java.lang.RuntimeException: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'security': Unsatisfied dependency expressed through field 'authProvider'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'authenticationProviderServiceImpl': Unsatisfied dependency expressed through field 'userService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'use': Unsatisfied dependency expressed through field 'tUsuarioDAO'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'TUsuarioDAOImpl': Injection of persistence dependencies failed; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'getSessionFactory' defined in mx.com.telcel.oym.netcas.config.Hibernate: Unsatisfied dependency expressed through method 'getSessionFactory' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in mx.com.telcel.oym.netcas.config.Hibernate: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [javax.sql.DataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.jdbc.datasource.lookup.DataSourceLookupFailureException: Failed to look up JNDI DataSource with name 'java:jboss/jdbc/poolOrclNetcasProd'; nested exception is javax.naming.NameNotFoundException: jdbc/poolOrclNetcasProd -- service jboss.naming.context.java.jboss.jdbc.poolOrclNetcasProd
+    Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'security': Unsatisfied dependency expressed through field 'authProvider'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'authenticationProviderServiceImpl': Unsatisfied dependency expressed through field 'userService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'use': Unsatisfied dependency expressed through field 'tUsuarioDAO'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'TUsuarioDAOImpl': Injection of persistence dependencies failed; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'getSessionFactory' defined in mx.com.telcel.oym.netcas.config.Hibernate: Unsatisfied dependency expressed through method 'getSessionFactory' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in mx.com.telcel.oym.netcas.config.Hibernate: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [javax.sql.DataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.jdbc.datasource.lookup.DataSourceLookupFailureException: Failed to look up JNDI DataSource with name 'java:jboss/jdbc/poolOrclNetcasProd'; nested exception is javax.naming.NameNotFoundException: jdbc/poolOrclNetcasProd -- service jboss.naming.context.java.jboss.jdbc.poolOrclNetcasProd
+    Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'authenticationProviderServiceImpl': Unsatisfied dependency expressed through field 'userService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'use': Unsatisfied dependency expressed through field 'tUsuarioDAO'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'TUsuarioDAOImpl': Injection of persistence dependencies failed; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'getSessionFactory' defined in mx.com.telcel.oym.netcas.config.Hibernate: Unsatisfied dependency expressed through method 'getSessionFactory' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in mx.com.telcel.oym.netcas.config.Hibernate: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [javax.sql.DataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.jdbc.datasource.lookup.DataSourceLookupFailureException: Failed to look up JNDI DataSource with name 'java:jboss/jdbc/poolOrclNetcasProd'; nested exception is javax.naming.NameNotFoundException: jdbc/poolOrclNetcasProd -- service jboss.naming.context.java.jboss.jdbc.poolOrclNetcasProd
+    Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'use': Unsatisfied dependency expressed through field 'tUsuarioDAO'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'TUsuarioDAOImpl': Injection of persistence dependencies failed; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'getSessionFactory' defined in mx.com.telcel.oym.netcas.config.Hibernate: Unsatisfied dependency expressed through method 'getSessionFactory' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in mx.com.telcel.oym.netcas.config.Hibernate: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [javax.sql.DataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.jdbc.datasource.lookup.DataSourceLookupFailureException: Failed to look up JNDI DataSource with name 'java:jboss/jdbc/poolOrclNetcasProd'; nested exception is javax.naming.NameNotFoundException: jdbc/poolOrclNetcasProd -- service jboss.naming.context.java.jboss.jdbc.poolOrclNetcasProd
+    Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'TUsuarioDAOImpl': Injection of persistence dependencies failed; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'getSessionFactory' defined in mx.com.telcel.oym.netcas.config.Hibernate: Unsatisfied dependency expressed through method 'getSessionFactory' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in mx.com.telcel.oym.netcas.config.Hibernate: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [javax.sql.DataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.jdbc.datasource.lookup.DataSourceLookupFailureException: Failed to look up JNDI DataSource with name 'java:jboss/jdbc/poolOrclNetcasProd'; nested exception is javax.naming.NameNotFoundException: jdbc/poolOrclNetcasProd -- service jboss.naming.context.java.jboss.jdbc.poolOrclNetcasProd
+    Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'getSessionFactory' defined in mx.com.telcel.oym.netcas.config.Hibernate: Unsatisfied dependency expressed through method 'getSessionFactory' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in mx.com.telcel.oym.netcas.config.Hibernate: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [javax.sql.DataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.jdbc.datasource.lookup.DataSourceLookupFailureException: Failed to look up JNDI DataSource with name 'java:jboss/jdbc/poolOrclNetcasProd'; nested exception is javax.naming.NameNotFoundException: jdbc/poolOrclNetcasProd -- service jboss.naming.context.java.jboss.jdbc.poolOrclNetcasProd
+    Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in mx.com.telcel.oym.netcas.config.Hibernate: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [javax.sql.DataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.jdbc.datasource.lookup.DataSourceLookupFailureException: Failed to look up JNDI DataSource with name 'java:jboss/jdbc/poolOrclNetcasProd'; nested exception is javax.naming.NameNotFoundException: jdbc/poolOrclNetcasProd -- service jboss.naming.context.java.jboss.jdbc.poolOrclNetcasProd
+    Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [javax.sql.DataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.jdbc.datasource.lookup.DataSourceLookupFailureException: Failed to look up JNDI DataSource with name 'java:jboss/jdbc/poolOrclNetcasProd'; nested exception is javax.naming.NameNotFoundException: jdbc/poolOrclNetcasProd -- service jboss.naming.context.java.jboss.jdbc.poolOrclNetcasProd
+    Caused by: org.springframework.jdbc.datasource.lookup.DataSourceLookupFailureException: Failed to look up JNDI DataSource with name 'java:jboss/jdbc/poolOrclNetcasProd'; nested exception is javax.naming.NameNotFoundException: jdbc/poolOrclNetcasProd -- service jboss.naming.context.java.jboss.jdbc.poolOrclNetcasProd
+    Caused by: javax.naming.NameNotFoundException: jdbc/poolOrclNetcasProd -- service jboss.naming.context.java.jboss.jdbc.poolOrclNetcasProd"}}
+2019-06-04 12:37:15,879 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 42) WFLYSRV0010: Implementado "netcas.war" (runtime-name : "netcas.war")
+2019-06-04 12:37:15,899 INFO  [org.jboss.as.controller] (Controller Boot Thread) WFLYCTL0183: Reporte del estatus del servicio
+WFLYCTL0186: Servicios que no lograron iniciar:      service jboss.deployment.unit."netcas.war".undertow-deployment: java.lang.RuntimeException: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'security': Unsatisfied dependency expressed through field 'authProvider'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'authenticationProviderServiceImpl': Unsatisfied dependency expressed through field 'userService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'use': Unsatisfied dependency expressed through field 'tUsuarioDAO'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'TUsuarioDAOImpl': Injection of persistence dependencies failed; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'getSessionFactory' defined in mx.com.telcel.oym.netcas.config.Hibernate: Unsatisfied dependency expressed through method 'getSessionFactory' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in mx.com.telcel.oym.netcas.config.Hibernate: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [javax.sql.DataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.jdbc.datasource.lookup.DataSourceLookupFailureException: Failed to look up JNDI DataSource with name 'java:jboss/jdbc/poolOrclNetcasProd'; nested exception is javax.naming.NameNotFoundException: jdbc/poolOrclNetcasProd -- service jboss.naming.context.java.jboss.jdbc.poolOrclNetcasProd
+
+2019-06-04 12:37:16,048 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0212: Reanudando el servidor
+2019-06-04 12:37:16,063 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0060: Interfaz de administración http escuchando en http://127.0.0.1:9990/management
+2019-06-04 12:37:16,063 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0051: Consola de administración escuchando en http://127.0.0.1:9990
+2019-06-04 12:37:16,063 ERROR [org.jboss.as] (Controller Boot Thread) WFLYSRV0026: JBoss EAP 7.2.0.GA (WildFly Core 6.0.11.Final-redhat-00001)  inició (con errores) en 35872ms - Inició 903 de 1091 servicios (2 servicios fallaron o faltan dependencias, 326 servicios son perezosos, pasivos o por demanda)
+2019-06-04 13:39:00,412 INFO  [org.jboss.modules] (main) JBoss Modules version 1.8.6.Final-redhat-00001
+2019-06-04 13:39:01,202 INFO  [org.jboss.msc] (main) JBoss MSC version 1.4.5.Final-redhat-00001
+2019-06-04 13:39:01,219 INFO  [org.jboss.threads] (main) JBoss Threads version 2.3.2.Final-redhat-1
+2019-06-04 13:39:01,387 INFO  [org.jboss.as] (MSC service thread 1-2) WFLYSRV0049: JBoss EAP 7.2.0.GA (WildFly Core 6.0.11.Final-redhat-00001) iniciando
+2019-06-04 13:39:01,389 DEBUG [org.jboss.as.config] (MSC service thread 1-2) Propiedades del sistema configuradas:
+	awt.toolkit = sun.awt.windows.WToolkit
+	file.encoding = Cp1252
+	file.encoding.pkg = sun.io
+	file.separator = \
+	java.awt.graphicsenv = sun.awt.Win32GraphicsEnvironment
+	java.awt.headless = true
+	java.awt.printerjob = sun.awt.windows.WPrinterJob
+	java.class.path = C:\ajboss-eap-7.2\jboss-modules.jar
+	java.class.version = 52.0
+	java.endorsed.dirs = C:\Program Files\Java\jre1.8.0_211\lib\endorsed
+	java.ext.dirs = C:\Program Files\Java\jre1.8.0_211\lib\ext;C:\Windows\Sun\Java\lib\ext
+	java.home = C:\Program Files\Java\jre1.8.0_211
+	java.io.tmpdir = C:\Users\engel\AppData\Local\Temp\
+	java.library.path = C:\Program Files\Java\jre1.8.0_211\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;native;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x86;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x64;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;.
+	java.net.preferIPv4Stack = true
+	java.runtime.name = Java(TM) SE Runtime Environment
+	java.runtime.version = 1.8.0_211-b12
+	java.specification.name = Java Platform API Specification
+	java.specification.vendor = Oracle Corporation
+	java.specification.version = 1.8
+	java.util.logging.manager = org.jboss.logmanager.LogManager
+	java.vendor = Oracle Corporation
+	java.vendor.url = http://java.oracle.com/
+	java.vendor.url.bug = http://bugreport.sun.com/bugreport/
+	java.version = 1.8.0_211
+	java.vm.info = mixed mode
+	java.vm.name = Java HotSpot(TM) 64-Bit Server VM
+	java.vm.specification.name = Java Virtual Machine Specification
+	java.vm.specification.vendor = Oracle Corporation
+	java.vm.specification.version = 1.8
+	java.vm.vendor = Oracle Corporation
+	java.vm.version = 25.211-b12
+	javax.management.builder.initial = org.jboss.as.jmx.PluggableMBeanServerBuilder
+	jboss.bind.address = localhost
+	jboss.bind.address.management = localhost
+	jboss.home.dir = C:\ajboss-eap-7.2
+	jboss.host.name = engel-pc
+	jboss.modules.dir = C:\ajboss-eap-7.2\modules
+	jboss.modules.system.pkgs = org.jboss.byteman
+	jboss.node.name = engel-pc
+	jboss.qualified.host.name = engel-pc
+	jboss.server.base.dir = C:\ajboss-eap-7.2\standalone
+	jboss.server.config.dir = C:\ajboss-eap-7.2\standalone\configuration
+	jboss.server.data.dir = C:\ajboss-eap-7.2\standalone\data
+	jboss.server.deploy.dir = C:\ajboss-eap-7.2\standalone\data\content
+	jboss.server.log.dir = C:\ajboss-eap-7.2\standalone\log
+	jboss.server.name = engel-pc
+	jboss.server.persist.config = true
+	jboss.server.temp.dir = C:\ajboss-eap-7.2\standalone\tmp
+	line.separator = 
+
+	logging.configuration = file:C:\ajboss-eap-7.2\standalone\configuration\logging.properties
+	module.path = C:\ajboss-eap-7.2\modules
+	org.jboss.boot.log.file = C:\ajboss-eap-7.2\standalone\log\boot.log
+	org.jboss.logmanager.nocolor = true
+	org.jboss.resolver.warning = true
+	os.arch = amd64
+	os.name = Windows 7
+	os.version = 6.1
+	path.separator = ;
+	program.name = JBossTools: Red Hat JBoss EAP7.2
+	sun.arch.data.model = 64
+	sun.boot.class.path = C:\Program Files\Java\jre1.8.0_211\lib\resources.jar;C:\Program Files\Java\jre1.8.0_211\lib\rt.jar;C:\Program Files\Java\jre1.8.0_211\lib\sunrsasign.jar;C:\Program Files\Java\jre1.8.0_211\lib\jsse.jar;C:\Program Files\Java\jre1.8.0_211\lib\jce.jar;C:\Program Files\Java\jre1.8.0_211\lib\charsets.jar;C:\Program Files\Java\jre1.8.0_211\lib\jfr.jar;C:\Program Files\Java\jre1.8.0_211\classes
+	sun.boot.library.path = C:\Program Files\Java\jre1.8.0_211\bin
+	sun.cpu.endian = little
+	sun.cpu.isalist = amd64
+	sun.desktop = windows
+	sun.io.unicode.encoding = UnicodeLittle
+	sun.java.command = org.jboss.modules.Main -mp C:\ajboss-eap-7.2\modules org.jboss.as.standalone -b localhost --server-config=standalone.xml -Djboss.server.base.dir=C:\ajboss-eap-7.2\standalone
+	sun.java.launcher = SUN_STANDARD
+	sun.jnu.encoding = Cp1252
+	sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+	sun.os.patch.level = Service Pack 1
+	sun.rmi.dgc.client.gcInterval = 3600000
+	sun.rmi.dgc.server.gcInterval = 3600000
+	user.country = MX
+	user.dir = C:\ajboss-eap-7.2\bin
+	user.home = C:\Users\engel
+	user.language = es
+	user.name = engel
+	user.script = 
+	user.timezone = America/Mexico_City
+	user.variant = 
+2019-06-04 13:39:01,390 DEBUG [org.jboss.as.config] (MSC service thread 1-2) Argumentos de VM: -Dprogram.name=JBossTools: Red Hat JBoss EAP7.2 -Xms1303m -Xmx1303m -XX:MetaspaceSize=96M -XX:MaxMetaspaceSize=256m -Dorg.jboss.resolver.warning=true -Djava.net.preferIPv4Stack=true -Dsun.rmi.dgc.client.gcInterval=3600000 -Dsun.rmi.dgc.server.gcInterval=3600000 -Djboss.modules.system.pkgs=org.jboss.byteman -Djava.awt.headless=true -Dorg.jboss.boot.log.file=C:\ajboss-eap-7.2\standalone\log\boot.log -Dlogging.configuration=file:C:\ajboss-eap-7.2\standalone\configuration\logging.properties -Djboss.home.dir=C:\ajboss-eap-7.2 -Dorg.jboss.logmanager.nocolor=true -Djboss.bind.address.management=localhost -Dfile.encoding=Cp1252 
+2019-06-04 13:39:02,401 INFO  [org.wildfly.security] (ServerService Thread Pool -- 25) ELY00001: WildFly Elytron version 1.6.1.Final-redhat-00001
+2019-06-04 13:39:03,566 WARN  [org.jboss.as.clustering.infinispan] (Controller Boot Thread) WFLYCLINF0004: El atributo 'strategy' del elemento 'eviction' ya no recibe soporte y será ignorado.
+2019-06-04 13:39:03,567 WARN  [org.jboss.as.clustering.infinispan] (Controller Boot Thread) WFLYCLINF0004: El atributo 'strategy' del elemento 'eviction' ya no recibe soporte y será ignorado.
+2019-06-04 13:39:04,129 INFO  [org.jboss.as.controller.management-deprecated] (Controller Boot Thread) WFLYCTL0028: El atributo 'security-realm' en el recurso en la dirección '/core-service=management/management-interface=http-interface' quedó obsoleto y quizás sea retirado en una versión futura. Consulte la descripción de atributos en la salida de la operación read-resource-description para aprender más sobre la depreciación.
+2019-06-04 13:39:04,182 INFO  [org.jboss.as.controller.management-deprecated] (ServerService Thread Pool -- 6) WFLYCTL0028: El atributo 'security-realm' en el recurso en la dirección '/subsystem=undertow/server=default-server/https-listener=https' quedó obsoleto y quizás sea retirado en una versión futura. Consulte la descripción de atributos en la salida de la operación read-resource-description para aprender más sobre la depreciación.
+2019-06-04 13:39:04,272 INFO  [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 1) WFLYDS0015: Re-intentando la implementación fallida netcas.war
+2019-06-04 13:39:04,476 INFO  [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 1) WFLYDS0004: Se encontró netcas.war en el directorio de implementación. Para disparar la implementación cree un archivo llamado netcas.war.dodeploy
+2019-06-04 13:39:04,522 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0039: Creando el servicio de administración http utilizando el enlace de socket (management-http) 
+2019-06-04 13:39:04,555 INFO  [org.xnio] (MSC service thread 1-4) XNIO version 3.6.5.Final-redhat-00001
+2019-06-04 13:39:04,566 INFO  [org.xnio.nio] (MSC service thread 1-4) XNIO NIO Implementation Version 3.6.5.Final-redhat-00001
+2019-06-04 13:39:04,819 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 42) WFLYCLINF0001: Activando el sub-sistema Infinispan.
+2019-06-04 13:39:04,835 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 50) WFLYNAM0001: Activando el sub-sistema de nombrado
+2019-06-04 13:39:04,840 INFO  [org.jboss.as.security] (ServerService Thread Pool -- 57) WFLYSEC0002: Activando el sub-sistema de seguridad
+2019-06-04 13:39:04,843 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 60) WFLYWS0002: Activando WebServices Extension
+2019-06-04 13:39:04,952 INFO  [org.jboss.as.connector] (MSC service thread 1-5) WFLYJCA0009: Iniciando JCA sub-sistema (WildFly/IronJacamar 1.4.11.Final-redhat-00001)
+2019-06-04 13:39:04,968 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 58) WFLYTX0013: El atributo node-identifier del /subsystem=transactions está configurado como el valor predeterminado. Esto es peligroso para los entornos que ejecutan varios servidores. Asegúrese de que el valor del atributo sea único.
+2019-06-04 13:39:04,999 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-1) WFLYMAIL0002: Sesión de correo desenlazada [java:jboss/mail/Default]
+2019-06-04 13:39:05,004 INFO  [org.wildfly.extension.io] (ServerService Thread Pool -- 41) WFLYIO001: Worker 'default' ha configurado automáticamente los hilos de núcleo 8 con los hilos de tareas 64 en base a los procesadores 4 disponibles.
+2019-06-04 13:39:05,005 INFO  [org.jboss.as.jaxrs] (ServerService Thread Pool -- 43) WFLYRS0016: RESTEasy versión 3.6.1.SP2-redhat-00001
+2019-06-04 13:39:05,018 INFO  [org.jboss.as.security] (MSC service thread 1-7) WFLYSEC0001: Versión PicketBox actual=5.0.3.Final-redhat-3
+2019-06-04 13:39:05,090 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-3) WFLYMAIL0001: Sesión de correo enlazada [java:jboss/mail/Default]
+2019-06-04 13:39:05,091 INFO  [org.jboss.as.naming] (MSC service thread 1-5) WFLYNAM0003: Iniciando el servicio de nombrado
+2019-06-04 13:39:05,106 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) WFLYUT0003: Undertow 2.0.15.Final-redhat-00001 iniciando
+2019-06-04 13:39:05,110 INFO  [org.jboss.as.jsf] (ServerService Thread Pool -- 48) WFLYJSF0007: Se activaron las siguientes implementaciones JSF: [main]
+2019-06-04 13:39:05,246 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 36) WFLYJCA0004: Implementación del controlador que cumple con los requerimientos de JDBC class org.h2.Driver (versión 1.4)
+2019-06-04 13:39:05,281 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-3) WFLYJCA0018: Servicio de controlador iniciado con driver-name = h2
+2019-06-04 13:39:05,379 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 36) WFLYJCA0004: Implementación del controlador que cumple con los requerimientos de JDBC class oracle.jdbc.driver.OracleDriver (versión 12.1)
+2019-06-04 13:39:05,430 INFO  [org.jboss.remoting] (MSC service thread 1-1) JBoss Remoting version 5.0.8.Final-redhat-1
+2019-06-04 13:39:05,461 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-4) WFLYJCA0018: Servicio de controlador iniciado con driver-name = oracle
+2019-06-04 13:39:05,566 INFO  [org.jboss.as.ejb3] (MSC service thread 1-3) WFLYEJB0481: El grupo estricto (slsb-strict-max-pool utiliza un tamaño de instancia máximo de 64 (por clase), el cual se deriva del tamaño de grupo del Worker de hilos. 
+2019-06-04 13:39:05,567 INFO  [org.jboss.as.ejb3] (MSC service thread 1-7) WFLYEJB0482: El grupo estricto mdb-strict-max-pool utiliza un tamaño de instancia máximo de 16 (por clase), el cual se deriva del número de CPUs en este host. 
+2019-06-04 13:39:05,592 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-7) WFLYJCA0010: Fuente de datos desenlazados [java:jboss/datasources/ExampleDS]
+2019-06-04 13:39:05,615 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-8) WFLYJCA0010: Fuente de datos desenlazados [java:jboss/jdbc/poolOrclNetcasProd]
+2019-06-04 13:39:05,748 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 59) WFLYUT0014: Creación de controlador de archivos para la ruta de acceso 'C:\ajboss-eap-7.2/welcome-content' con las opciones s [directory-listing: 'false', follow-symlink: 'false', case-sensitive: 'true', safe-symlink-paths: '[]']
+2019-06-04 13:39:05,810 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0012: El servidor ha iniciado default-server.
+2019-06-04 13:39:05,814 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) WFLYUT0018: Host default-host iniciando
+2019-06-04 13:39:06,135 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0006: Undertow HTTP oyente default escuchando en 127.0.0.1:8080
+2019-06-04 13:39:06,199 INFO  [org.jboss.as.ejb3] (MSC service thread 1-8) WFLYEJB0493: Suspensión del subsistema de EJB completa
+2019-06-04 13:39:06,428 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-3) WFLYJCA0001: Fuente de datos enlazados [java:jboss/jdbc/poolOrclNetcasProd]
+2019-06-04 13:39:06,429 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-8) WFLYJCA0001: Fuente de datos enlazados [java:jboss/datasources/ExampleDS]
+2019-06-04 13:39:06,555 INFO  [org.jboss.as.patching] (MSC service thread 1-6) WFLYPAT0050: El ID de parche acumulativo JBoss EAP es: base, parches one-off incluyen: none
+2019-06-04 13:39:06 [WARN ] security:161 - WFLYDM0111: No se encontró el KeyStore C:\ajboss-eap-7.2\standalone\configuration\application.keystore, será autogenerado durante la primera utilización con un certificado firmado automáticamente para el host localhost
+2019-06-04 13:39:06 [INFO ] scanner:402 - WFLYDS0013: Inició FileSystemDeploymentService para el directorio C:\ajboss-eap-7.2\standalone\deployments
+2019-06-04 13:39:06 [INFO ] deployment:86 - WFLYSRV0027: Iniciando la implementación de netcas.war" (runtime-name: "netcas.war")
+2019-06-04 13:39:07 [INFO ] undertow:148 - WFLYUT0006: Undertow HTTPS oyente https escuchando en 127.0.0.1:8443
+2019-06-04 13:39:07 [INFO ] management:340 - JBWS022052: Starting JBossWS 5.2.4.Final-redhat-00001 (Apache CXF 3.2.5.redhat-00001) 
+2019-06-04 13:39:17 [WARN ] ee:98 - WFLYEE0007: No se está instalando el componente opcional org.springframework.http.server.reactive.ServletServerHttpRequest$RequestAsyncListener debido a una excepción (active el nivel de registro DEBUG para ver la razón)
+2019-06-04 13:39:17 [WARN ] ee:98 - WFLYEE0007: No se está instalando el componente opcional org.springframework.http.server.ServletServerHttpAsyncRequestControl debido a una excepción (active el nivel de registro DEBUG para ver la razón)
+2019-06-04 13:39:17 [WARN ] ee:98 - WFLYEE0007: No se está instalando el componente opcional org.springframework.web.context.request.async.StandardServletAsyncWebRequest debido a una excepción (active el nivel de registro DEBUG para ver la razón)
+2019-06-04 13:39:17 [WARN ] ee:98 - WFLYEE0007: No se está instalando el componente opcional org.springframework.http.server.reactive.ServletServerHttpResponse$ResponseAsyncListener debido a una excepción (active el nivel de registro DEBUG para ver la razón)
+2019-06-04 13:39:17 [WARN ] ee:98 - WFLYEE0007: No se está instalando el componente opcional org.springframework.http.server.reactive.ServletHttpHandlerAdapter$HandlerResultAsyncListener debido a una excepción (active el nivel de registro DEBUG para ver la razón)
+2019-06-04 13:39:18 [INFO ] jdbc:70 - WFLYJCA0004: Implementación del controlador que cumple con los requerimientos de JDBC class oracle.jdbc.OracleDriver (versión 12.1)
+2019-06-04 13:39:18 [WARN ] deployer:115 - WFLYWELD0013: La implementación netcas.war contiene anotaciones de CDI, pero no se encontró ningún archivo bean (beans.xml o clase con anotaciones de definición de beans).
+2019-06-04 13:39:18 [INFO ] jdbc:68 - WFLYJCA0018: Servicio de controlador iniciado con driver-name = netcas.war_oracle.jdbc.OracleDriver_12_1
+2019-06-04 13:39:19 [INFO ] GlobalComponentRegistry:254 - ISPN000128: Infinispan version: Infinispan 'Estrella Galicia' 9.3.3.Final-redhat-00001
+2019-06-04 13:39:19 [INFO ] infinispan:138 - WFLYCLINF0002: Inició client-mappings caché del contenedor ejb 
+2019-06-04 13:39:19 [INFO ] servlet:364 - 2 Spring WebApplicationInitializers detected on classpath
+2019-06-04 13:39:20 [INFO ] config:223 - Inicializando Mojarra 2.3.5.SP2-redhat-00001 para el contexto '/netcas'
+2019-06-04 13:39:24 [INFO ] servlet:364 - Initializing Spring root WebApplicationContext
+2019-06-04 13:39:24 [INFO ] ContextLoader:270 - Root WebApplicationContext: initialization started
+2019-06-04 13:39:25 [INFO ] Version:46 - HHH000412: Hibernate Core {5.4.0.Final}
+2019-06-04 13:39:25 [INFO ] Environment:199 - HHH000206: hibernate.properties not found
+2019-06-04 13:39:25 [INFO ] Version:49 - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2019-06-04 13:39:29 [WARN ] OnePool:537 - IJ000604: Throwable while attempting to get a new connection: null: javax.resource.ResourceException: IJ031084: Unable to create connection
+	at org.jboss.jca.adapters.jdbc.local.LocalManagedConnectionFactory.createLocalManagedConnection(LocalManagedConnectionFactory.java:345)
+	at org.jboss.jca.adapters.jdbc.local.LocalManagedConnectionFactory.getLocalManagedConnection(LocalManagedConnectionFactory.java:352)
+	at org.jboss.jca.adapters.jdbc.local.LocalManagedConnectionFactory.createManagedConnection(LocalManagedConnectionFactory.java:287)
+	at org.jboss.jca.core.connectionmanager.pool.mcp.SemaphoreConcurrentLinkedDequeManagedConnectionPool.createConnectionEventListener(SemaphoreConcurrentLinkedDequeManagedConnectionPool.java:1326)
+	at org.jboss.jca.core.connectionmanager.pool.mcp.SemaphoreConcurrentLinkedDequeManagedConnectionPool.getConnection(SemaphoreConcurrentLinkedDequeManagedConnectionPool.java:499)
+	at org.jboss.jca.core.connectionmanager.pool.AbstractPool.getSimpleConnection(AbstractPool.java:632)
+	at org.jboss.jca.core.connectionmanager.pool.AbstractPool.getConnection(AbstractPool.java:604)
+	at org.jboss.jca.core.connectionmanager.AbstractConnectionManager.getManagedConnection(AbstractConnectionManager.java:624)
+	at org.jboss.jca.core.connectionmanager.tx.TxConnectionManagerImpl.getManagedConnection(TxConnectionManagerImpl.java:440)
+	at org.jboss.jca.core.connectionmanager.AbstractConnectionManager.allocateConnection(AbstractConnectionManager.java:789)
+	at org.jboss.jca.adapters.jdbc.WrapperDataSource.getConnection(WrapperDataSource.java:138)
+	at org.jboss.as.connector.subsystems.datasources.WildFlyDataSource.getConnection(WildFlyDataSource.java:64)
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:180)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:68)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:35)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:94)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:237)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214)
+	at org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory.injectServices(DefaultIdentifierGeneratorFactory.java:152)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.injectDependencies(AbstractServiceRegistryImpl.java:286)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:243)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:175)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:119)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.build(MetadataBuildingProcess.java:84)
+	at org.hibernate.boot.internal.MetadataBuilderImpl.build(MetadataBuilderImpl.java:474)
+	at org.hibernate.boot.internal.MetadataBuilderImpl.build(MetadataBuilderImpl.java:85)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:689)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:724)
+	at org.springframework.orm.hibernate5.LocalSessionFactoryBean.buildSessionFactory(LocalSessionFactoryBean.java:615)
+	at org.springframework.orm.hibernate5.LocalSessionFactoryBean.afterPropertiesSet(LocalSessionFactoryBean.java:599)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1803)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1740)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:576)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:498)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:224)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveNamedBean(DefaultListableBeanFactory.java:1116)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveNamedBean(DefaultListableBeanFactory.java:1081)
+	at org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor.findDefaultEntityManagerFactory(PersistenceAnnotationBeanPostProcessor.java:580)
+	at org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor.findEntityManagerFactory(PersistenceAnnotationBeanPostProcessor.java:543)
+	at org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor$PersistenceElement.resolveEntityManager(PersistenceAnnotationBeanPostProcessor.java:711)
+	at org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor$PersistenceElement.getResourceToInject(PersistenceAnnotationBeanPostProcessor.java:684)
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:180)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90)
+	at org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor.postProcessProperties(PersistenceAnnotationBeanPostProcessor.java:356)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1377)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:575)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:498)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:273)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1241)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1168)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:595)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:376)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1377)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:575)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:498)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:273)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1241)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1168)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:595)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:376)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1377)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:575)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:498)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:273)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1241)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1168)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:595)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:376)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1377)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:575)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:498)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:848)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:865)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:548)
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:400)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:291)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:103)
+	at io.undertow.servlet.core.ApplicationListeners.contextInitialized(ApplicationListeners.java:187)
+	at io.undertow.servlet.core.DeploymentManagerImpl$1.call(DeploymentManagerImpl.java:216)
+	at io.undertow.servlet.core.DeploymentManagerImpl$1.call(DeploymentManagerImpl.java:185)
+	at io.undertow.servlet.core.ServletRequestContextThreadSetupAction$1.call(ServletRequestContextThreadSetupAction.java:42)
+	at io.undertow.servlet.core.ContextClassLoaderSetupAction$1.call(ContextClassLoaderSetupAction.java:43)
+	at org.wildfly.extension.undertow.security.SecurityContextThreadSetupAction.lambda$create$0(SecurityContextThreadSetupAction.java:105)
+	at org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1502)
+	at org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1502)
+	at org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1502)
+	at org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1502)
+	at org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1502)
+	at io.undertow.servlet.core.DeploymentManagerImpl.deploy(DeploymentManagerImpl.java:250)
+	at org.wildfly.extension.undertow.deployment.UndertowDeploymentService.startContext(UndertowDeploymentService.java:96)
+	at org.wildfly.extension.undertow.deployment.UndertowDeploymentService$1.run(UndertowDeploymentService.java:78)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.jboss.threads.ContextClassLoaderSavingRunnable.run(ContextClassLoaderSavingRunnable.java:35)
+	at org.jboss.threads.EnhancedQueueExecutor.safeRun(EnhancedQueueExecutor.java:1985)
+	at org.jboss.threads.EnhancedQueueExecutor$ThreadBody.doRunTask(EnhancedQueueExecutor.java:1487)
+	at org.jboss.threads.EnhancedQueueExecutor$ThreadBody.run(EnhancedQueueExecutor.java:1378)
+	at java.lang.Thread.run(Unknown Source)
+	at org.jboss.threads.JBossThread.run(JBossThread.java:485)
+Caused by: java.sql.SQLRecoverableException: Error de E/S: The Network Adapter could not establish the connection
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:673)
+	at oracle.jdbc.driver.PhysicalConnection.<init>(PhysicalConnection.java:715)
+	at oracle.jdbc.driver.T4CConnection.<init>(T4CConnection.java:385)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:30)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:564)
+	at org.jboss.jca.adapters.jdbc.local.LocalManagedConnectionFactory.createLocalManagedConnection(LocalManagedConnectionFactory.java:321)
+	... 123 more
+Caused by: oracle.net.ns.NetException: The Network Adapter could not establish the connection
+	at oracle.net.nt.ConnStrategy.execute(ConnStrategy.java:445)
+	at oracle.net.resolver.AddrResolution.resolveAndExecute(AddrResolution.java:464)
+	at oracle.net.ns.NSProtocol.establishConnection(NSProtocol.java:594)
+	at oracle.net.ns.NSProtocol.connect(NSProtocol.java:229)
+	at oracle.jdbc.driver.T4CConnection.connect(T4CConnection.java:1360)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:486)
+	... 128 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.TwoStacksPlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at oracle.net.nt.TcpNTAdapter.connect(TcpNTAdapter.java:162)
+	at oracle.net.nt.ConnOption.connect(ConnOption.java:133)
+	at oracle.net.nt.ConnStrategy.execute(ConnStrategy.java:411)
+	... 133 more
+
+2019-06-04 13:39:29 [WARN ] JdbcEnvironmentInitiator:132 - HHH000342: Could not obtain connection to query metadata : javax.resource.ResourceException: IJ000453: Unable to get managed connection for java:jboss/jdbc/poolOrclNetcasProd
+2019-06-04 13:39:29 [WARN ] AnnotationConfigWebApplicationContext:556 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'security': Unsatisfied dependency expressed through field 'authProvider'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'authenticationProviderServiceImpl': Unsatisfied dependency expressed through field 'userService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'use': Unsatisfied dependency expressed through field 'tUsuarioDAO'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'TUsuarioDAOImpl': Injection of persistence dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'getSessionFactory' defined in mx.com.telcel.oym.netcas.config.Hibernate: Invocation of init method failed; nested exception is org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+2019-06-04 13:39:29 [ERROR] ContextLoader:312 - Context initialization failed: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'security': Unsatisfied dependency expressed through field 'authProvider'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'authenticationProviderServiceImpl': Unsatisfied dependency expressed through field 'userService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'use': Unsatisfied dependency expressed through field 'tUsuarioDAO'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'TUsuarioDAOImpl': Injection of persistence dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'getSessionFactory' defined in mx.com.telcel.oym.netcas.config.Hibernate: Invocation of init method failed; nested exception is org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:598)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:376)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1377)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:575)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:498)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:848)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:865)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:548)
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:400)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:291)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:103)
+	at io.undertow.servlet.core.ApplicationListeners.contextInitialized(ApplicationListeners.java:187)
+	at io.undertow.servlet.core.DeploymentManagerImpl$1.call(DeploymentManagerImpl.java:216)
+	at io.undertow.servlet.core.DeploymentManagerImpl$1.call(DeploymentManagerImpl.java:185)
+	at io.undertow.servlet.core.ServletRequestContextThreadSetupAction$1.call(ServletRequestContextThreadSetupAction.java:42)
+	at io.undertow.servlet.core.ContextClassLoaderSetupAction$1.call(ContextClassLoaderSetupAction.java:43)
+	at org.wildfly.extension.undertow.security.SecurityContextThreadSetupAction.lambda$create$0(SecurityContextThreadSetupAction.java:105)
+	at org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1502)
+	at org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1502)
+	at org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1502)
+	at org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1502)
+	at org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1502)
+	at io.undertow.servlet.core.DeploymentManagerImpl.deploy(DeploymentManagerImpl.java:250)
+	at org.wildfly.extension.undertow.deployment.UndertowDeploymentService.startContext(UndertowDeploymentService.java:96)
+	at org.wildfly.extension.undertow.deployment.UndertowDeploymentService$1.run(UndertowDeploymentService.java:78)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.jboss.threads.ContextClassLoaderSavingRunnable.run(ContextClassLoaderSavingRunnable.java:35)
+	at org.jboss.threads.EnhancedQueueExecutor.safeRun(EnhancedQueueExecutor.java:1985)
+	at org.jboss.threads.EnhancedQueueExecutor$ThreadBody.doRunTask(EnhancedQueueExecutor.java:1487)
+	at org.jboss.threads.EnhancedQueueExecutor$ThreadBody.run(EnhancedQueueExecutor.java:1378)
+	at java.lang.Thread.run(Unknown Source)
+	at org.jboss.threads.JBossThread.run(JBossThread.java:485)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'authenticationProviderServiceImpl': Unsatisfied dependency expressed through field 'userService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'use': Unsatisfied dependency expressed through field 'tUsuarioDAO'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'TUsuarioDAOImpl': Injection of persistence dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'getSessionFactory' defined in mx.com.telcel.oym.netcas.config.Hibernate: Invocation of init method failed; nested exception is org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:598)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:376)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1377)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:575)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:498)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:273)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1241)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1168)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:595)
+	... 37 more
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'use': Unsatisfied dependency expressed through field 'tUsuarioDAO'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'TUsuarioDAOImpl': Injection of persistence dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'getSessionFactory' defined in mx.com.telcel.oym.netcas.config.Hibernate: Invocation of init method failed; nested exception is org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:598)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:376)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1377)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:575)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:498)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:273)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1241)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1168)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:595)
+	... 50 more
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'TUsuarioDAOImpl': Injection of persistence dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'getSessionFactory' defined in mx.com.telcel.oym.netcas.config.Hibernate: Invocation of init method failed; nested exception is org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+	at org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor.postProcessProperties(PersistenceAnnotationBeanPostProcessor.java:359)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1377)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:575)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:498)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:273)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1241)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1168)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:595)
+	... 63 more
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'getSessionFactory' defined in mx.com.telcel.oym.netcas.config.Hibernate: Invocation of init method failed; nested exception is org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1744)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:576)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:498)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:224)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveNamedBean(DefaultListableBeanFactory.java:1116)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveNamedBean(DefaultListableBeanFactory.java:1081)
+	at org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor.findDefaultEntityManagerFactory(PersistenceAnnotationBeanPostProcessor.java:580)
+	at org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor.findEntityManagerFactory(PersistenceAnnotationBeanPostProcessor.java:543)
+	at org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor$PersistenceElement.resolveEntityManager(PersistenceAnnotationBeanPostProcessor.java:711)
+	at org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor$PersistenceElement.getResourceToInject(PersistenceAnnotationBeanPostProcessor.java:684)
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:180)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90)
+	at org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor.postProcessProperties(PersistenceAnnotationBeanPostProcessor.java:356)
+	... 74 more
+Caused by: org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:275)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:237)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214)
+	at org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory.injectServices(DefaultIdentifierGeneratorFactory.java:152)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.injectDependencies(AbstractServiceRegistryImpl.java:286)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:243)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:175)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:119)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.build(MetadataBuildingProcess.java:84)
+	at org.hibernate.boot.internal.MetadataBuilderImpl.build(MetadataBuilderImpl.java:474)
+	at org.hibernate.boot.internal.MetadataBuilderImpl.build(MetadataBuilderImpl.java:85)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:689)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:724)
+	at org.springframework.orm.hibernate5.LocalSessionFactoryBean.buildSessionFactory(LocalSessionFactoryBean.java:615)
+	at org.springframework.orm.hibernate5.LocalSessionFactoryBean.afterPropertiesSet(LocalSessionFactoryBean.java:599)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1803)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1740)
+	... 89 more
+Caused by: org.hibernate.HibernateException: Access to DialectResolutionInfo cannot be null when 'hibernate.dialect' not set
+	at org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.determineDialect(DialectFactoryImpl.java:100)
+	at org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.buildDialect(DialectFactoryImpl.java:54)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:137)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:35)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:94)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263)
+	... 106 more
+
+2019-06-04 13:39:29 [ERROR] fail:2000 - MSC000001: Failed to start service jboss.deployment.unit."netcas.war".undertow-deployment: org.jboss.msc.service.StartException in service jboss.deployment.unit."netcas.war".undertow-deployment: java.lang.RuntimeException: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'security': Unsatisfied dependency expressed through field 'authProvider'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'authenticationProviderServiceImpl': Unsatisfied dependency expressed through field 'userService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'use': Unsatisfied dependency expressed through field 'tUsuarioDAO'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'TUsuarioDAOImpl': Injection of persistence dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'getSessionFactory' defined in mx.com.telcel.oym.netcas.config.Hibernate: Invocation of init method failed; nested exception is org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+	at org.wildfly.extension.undertow.deployment.UndertowDeploymentService$1.run(UndertowDeploymentService.java:81)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.jboss.threads.ContextClassLoaderSavingRunnable.run(ContextClassLoaderSavingRunnable.java:35)
+	at org.jboss.threads.EnhancedQueueExecutor.safeRun(EnhancedQueueExecutor.java:1985)
+	at org.jboss.threads.EnhancedQueueExecutor$ThreadBody.doRunTask(EnhancedQueueExecutor.java:1487)
+	at org.jboss.threads.EnhancedQueueExecutor$ThreadBody.run(EnhancedQueueExecutor.java:1378)
+	at java.lang.Thread.run(Unknown Source)
+	at org.jboss.threads.JBossThread.run(JBossThread.java:485)
+Caused by: java.lang.RuntimeException: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'security': Unsatisfied dependency expressed through field 'authProvider'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'authenticationProviderServiceImpl': Unsatisfied dependency expressed through field 'userService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'use': Unsatisfied dependency expressed through field 'tUsuarioDAO'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'TUsuarioDAOImpl': Injection of persistence dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'getSessionFactory' defined in mx.com.telcel.oym.netcas.config.Hibernate: Invocation of init method failed; nested exception is org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+	at io.undertow.servlet.core.DeploymentManagerImpl.deploy(DeploymentManagerImpl.java:252)
+	at org.wildfly.extension.undertow.deployment.UndertowDeploymentService.startContext(UndertowDeploymentService.java:96)
+	at org.wildfly.extension.undertow.deployment.UndertowDeploymentService$1.run(UndertowDeploymentService.java:78)
+	... 8 more
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'security': Unsatisfied dependency expressed through field 'authProvider'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'authenticationProviderServiceImpl': Unsatisfied dependency expressed through field 'userService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'use': Unsatisfied dependency expressed through field 'tUsuarioDAO'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'TUsuarioDAOImpl': Injection of persistence dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'getSessionFactory' defined in mx.com.telcel.oym.netcas.config.Hibernate: Invocation of init method failed; nested exception is org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:598)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:376)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1377)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:575)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:498)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:848)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:865)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:548)
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:400)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:291)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:103)
+	at io.undertow.servlet.core.ApplicationListeners.contextInitialized(ApplicationListeners.java:187)
+	at io.undertow.servlet.core.DeploymentManagerImpl$1.call(DeploymentManagerImpl.java:216)
+	at io.undertow.servlet.core.DeploymentManagerImpl$1.call(DeploymentManagerImpl.java:185)
+	at io.undertow.servlet.core.ServletRequestContextThreadSetupAction$1.call(ServletRequestContextThreadSetupAction.java:42)
+	at io.undertow.servlet.core.ContextClassLoaderSetupAction$1.call(ContextClassLoaderSetupAction.java:43)
+	at org.wildfly.extension.undertow.security.SecurityContextThreadSetupAction.lambda$create$0(SecurityContextThreadSetupAction.java:105)
+	at org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1502)
+	at org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1502)
+	at org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1502)
+	at org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1502)
+	at org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1502)
+	at io.undertow.servlet.core.DeploymentManagerImpl.deploy(DeploymentManagerImpl.java:250)
+	... 10 more
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'authenticationProviderServiceImpl': Unsatisfied dependency expressed through field 'userService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'use': Unsatisfied dependency expressed through field 'tUsuarioDAO'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'TUsuarioDAOImpl': Injection of persistence dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'getSessionFactory' defined in mx.com.telcel.oym.netcas.config.Hibernate: Invocation of init method failed; nested exception is org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:598)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:376)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1377)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:575)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:498)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:273)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1241)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1168)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:595)
+	... 37 more
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'use': Unsatisfied dependency expressed through field 'tUsuarioDAO'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'TUsuarioDAOImpl': Injection of persistence dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'getSessionFactory' defined in mx.com.telcel.oym.netcas.config.Hibernate: Invocation of init method failed; nested exception is org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:598)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:376)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1377)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:575)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:498)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:273)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1241)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1168)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:595)
+	... 50 more
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'TUsuarioDAOImpl': Injection of persistence dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'getSessionFactory' defined in mx.com.telcel.oym.netcas.config.Hibernate: Invocation of init method failed; nested exception is org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+	at org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor.postProcessProperties(PersistenceAnnotationBeanPostProcessor.java:359)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1377)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:575)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:498)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:273)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1241)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1168)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:595)
+	... 63 more
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'getSessionFactory' defined in mx.com.telcel.oym.netcas.config.Hibernate: Invocation of init method failed; nested exception is org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1744)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:576)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:498)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:224)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveNamedBean(DefaultListableBeanFactory.java:1116)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveNamedBean(DefaultListableBeanFactory.java:1081)
+	at org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor.findDefaultEntityManagerFactory(PersistenceAnnotationBeanPostProcessor.java:580)
+	at org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor.findEntityManagerFactory(PersistenceAnnotationBeanPostProcessor.java:543)
+	at org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor$PersistenceElement.resolveEntityManager(PersistenceAnnotationBeanPostProcessor.java:711)
+	at org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor$PersistenceElement.getResourceToInject(PersistenceAnnotationBeanPostProcessor.java:684)
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:180)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90)
+	at org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor.postProcessProperties(PersistenceAnnotationBeanPostProcessor.java:356)
+	... 74 more
+Caused by: org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:275)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:237)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214)
+	at org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory.injectServices(DefaultIdentifierGeneratorFactory.java:152)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.injectDependencies(AbstractServiceRegistryImpl.java:286)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:243)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:175)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:119)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.build(MetadataBuildingProcess.java:84)
+	at org.hibernate.boot.internal.MetadataBuilderImpl.build(MetadataBuilderImpl.java:474)
+	at org.hibernate.boot.internal.MetadataBuilderImpl.build(MetadataBuilderImpl.java:85)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:689)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:724)
+	at org.springframework.orm.hibernate5.LocalSessionFactoryBean.buildSessionFactory(LocalSessionFactoryBean.java:615)
+	at org.springframework.orm.hibernate5.LocalSessionFactoryBean.afterPropertiesSet(LocalSessionFactoryBean.java:599)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1803)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1740)
+	... 89 more
+Caused by: org.hibernate.HibernateException: Access to DialectResolutionInfo cannot be null when 'hibernate.dialect' not set
+	at org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.determineDialect(DialectFactoryImpl.java:100)
+	at org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.buildDialect(DialectFactoryImpl.java:54)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:137)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:35)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:94)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263)
+	... 106 more
+
+2019-06-04 13:39:29 [ERROR] management-operation:1002 - WFLYCTL0013: Operación ("deploy") falló - dirección: ([("deployment" => "netcas.war")]) - descripción de la falla: {"WFLYCTL0080: Servicios fallidos" => {"jboss.deployment.unit.\"netcas.war\".undertow-deployment" => "java.lang.RuntimeException: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'security': Unsatisfied dependency expressed through field 'authProvider'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'authenticationProviderServiceImpl': Unsatisfied dependency expressed through field 'userService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'use': Unsatisfied dependency expressed through field 'tUsuarioDAO'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'TUsuarioDAOImpl': Injection of persistence dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'getSessionFactory' defined in mx.com.telcel.oym.netcas.config.Hibernate: Invocation of init method failed; nested exception is org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+    Caused by: java.lang.RuntimeException: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'security': Unsatisfied dependency expressed through field 'authProvider'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'authenticationProviderServiceImpl': Unsatisfied dependency expressed through field 'userService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'use': Unsatisfied dependency expressed through field 'tUsuarioDAO'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'TUsuarioDAOImpl': Injection of persistence dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'getSessionFactory' defined in mx.com.telcel.oym.netcas.config.Hibernate: Invocation of init method failed; nested exception is org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+    Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'security': Unsatisfied dependency expressed through field 'authProvider'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'authenticationProviderServiceImpl': Unsatisfied dependency expressed through field 'userService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'use': Unsatisfied dependency expressed through field 'tUsuarioDAO'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'TUsuarioDAOImpl': Injection of persistence dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'getSessionFactory' defined in mx.com.telcel.oym.netcas.config.Hibernate: Invocation of init method failed; nested exception is org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+    Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'authenticationProviderServiceImpl': Unsatisfied dependency expressed through field 'userService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'use': Unsatisfied dependency expressed through field 'tUsuarioDAO'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'TUsuarioDAOImpl': Injection of persistence dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'getSessionFactory' defined in mx.com.telcel.oym.netcas.config.Hibernate: Invocation of init method failed; nested exception is org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+    Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'use': Unsatisfied dependency expressed through field 'tUsuarioDAO'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'TUsuarioDAOImpl': Injection of persistence dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'getSessionFactory' defined in mx.com.telcel.oym.netcas.config.Hibernate: Invocation of init method failed; nested exception is org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+    Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'TUsuarioDAOImpl': Injection of persistence dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'getSessionFactory' defined in mx.com.telcel.oym.netcas.config.Hibernate: Invocation of init method failed; nested exception is org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+    Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'getSessionFactory' defined in mx.com.telcel.oym.netcas.config.Hibernate: Invocation of init method failed; nested exception is org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+    Caused by: org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+    Caused by: org.hibernate.HibernateException: Access to DialectResolutionInfo cannot be null when 'hibernate.dialect' not set"}}
+2019-06-04 13:39:29 [INFO ] server:173 - WFLYSRV0010: Implementado "netcas.war" (runtime-name : "netcas.war")
+2019-06-04 13:39:29 [INFO ] controller:73 - WFLYCTL0183: Reporte del estatus del servicio
+WFLYCTL0186: Servicios que no lograron iniciar:      service jboss.deployment.unit."netcas.war".undertow-deployment: java.lang.RuntimeException: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'security': Unsatisfied dependency expressed through field 'authProvider'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'authenticationProviderServiceImpl': Unsatisfied dependency expressed through field 'userService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'use': Unsatisfied dependency expressed through field 'tUsuarioDAO'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'TUsuarioDAOImpl': Injection of persistence dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'getSessionFactory' defined in mx.com.telcel.oym.netcas.config.Hibernate: Invocation of init method failed; nested exception is org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+
+2019-06-04 13:39:29 [INFO ] server:116 - WFLYSRV0212: Reanudando el servidor
+2019-06-04 13:39:29 [INFO ] as:159 - WFLYSRV0060: Interfaz de administración http escuchando en http://127.0.0.1:9990/management
+2019-06-04 13:39:29 [INFO ] as:161 - WFLYSRV0051: Consola de administración escuchando en http://127.0.0.1:9990
+2019-06-04 13:39:29 [ERROR] as:112 - WFLYSRV0026: JBoss EAP 7.2.0.GA (WildFly Core 6.0.11.Final-redhat-00001)  inició (con errores) en 30227ms - Inició 911 de 1099 servicios (2 servicios fallaron o faltan dependencias, 329 servicios son perezosos, pasivos o por demanda)
+2019-06-04 13:40:07 [INFO ] modules:1143 - JBoss Modules version 1.8.6.Final-redhat-00001
+2019-06-04 13:40:07 [INFO ] msc:91 - JBoss MSC version 1.4.5.Final-redhat-00001
+2019-06-04 13:40:07 [INFO ] threads:52 - JBoss Threads version 2.3.2.Final-redhat-1
+2019-06-04 13:40:07 [INFO ] as:102 - WFLYSRV0049: JBoss EAP 7.2.0.GA (WildFly Core 6.0.11.Final-redhat-00001) iniciando
+2019-06-04 13:40:07 [DEBUG] config:114 - Propiedades del sistema configuradas:
+	awt.toolkit = sun.awt.windows.WToolkit
+	file.encoding = Cp1252
+	file.encoding.pkg = sun.io
+	file.separator = \
+	java.awt.graphicsenv = sun.awt.Win32GraphicsEnvironment
+	java.awt.headless = true
+	java.awt.printerjob = sun.awt.windows.WPrinterJob
+	java.class.path = C:\ajboss-eap-7.2\jboss-modules.jar
+	java.class.version = 52.0
+	java.endorsed.dirs = C:\Program Files\Java\jre1.8.0_211\lib\endorsed
+	java.ext.dirs = C:\Program Files\Java\jre1.8.0_211\lib\ext;C:\Windows\Sun\Java\lib\ext
+	java.home = C:\Program Files\Java\jre1.8.0_211
+	java.io.tmpdir = C:\Users\engel\AppData\Local\Temp\
+	java.library.path = C:\Program Files\Java\jre1.8.0_211\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;native;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x86;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x64;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;.
+	java.net.preferIPv4Stack = true
+	java.runtime.name = Java(TM) SE Runtime Environment
+	java.runtime.version = 1.8.0_211-b12
+	java.specification.name = Java Platform API Specification
+	java.specification.vendor = Oracle Corporation
+	java.specification.version = 1.8
+	java.util.logging.manager = org.jboss.logmanager.LogManager
+	java.vendor = Oracle Corporation
+	java.vendor.url = http://java.oracle.com/
+	java.vendor.url.bug = http://bugreport.sun.com/bugreport/
+	java.version = 1.8.0_211
+	java.vm.info = mixed mode
+	java.vm.name = Java HotSpot(TM) 64-Bit Server VM
+	java.vm.specification.name = Java Virtual Machine Specification
+	java.vm.specification.vendor = Oracle Corporation
+	java.vm.specification.version = 1.8
+	java.vm.vendor = Oracle Corporation
+	java.vm.version = 25.211-b12
+	javax.management.builder.initial = org.jboss.as.jmx.PluggableMBeanServerBuilder
+	jboss.bind.address = localhost
+	jboss.bind.address.management = localhost
+	jboss.home.dir = C:\ajboss-eap-7.2
+	jboss.host.name = engel-pc
+	jboss.modules.dir = C:\ajboss-eap-7.2\modules
+	jboss.modules.system.pkgs = org.jboss.byteman
+	jboss.node.name = engel-pc
+	jboss.qualified.host.name = engel-pc
+	jboss.server.base.dir = C:\ajboss-eap-7.2\standalone
+	jboss.server.config.dir = C:\ajboss-eap-7.2\standalone\configuration
+	jboss.server.data.dir = C:\ajboss-eap-7.2\standalone\data
+	jboss.server.deploy.dir = C:\ajboss-eap-7.2\standalone\data\content
+	jboss.server.log.dir = C:\ajboss-eap-7.2\standalone\log
+	jboss.server.name = engel-pc
+	jboss.server.persist.config = true
+	jboss.server.temp.dir = C:\ajboss-eap-7.2\standalone\tmp
+	line.separator = 
+
+	logging.configuration = file:C:\ajboss-eap-7.2\standalone\configuration\logging.properties
+	module.path = C:\ajboss-eap-7.2\modules
+	org.jboss.boot.log.file = C:\ajboss-eap-7.2\standalone\log\boot.log
+	org.jboss.logmanager.nocolor = true
+	org.jboss.resolver.warning = true
+	os.arch = amd64
+	os.name = Windows 7
+	os.version = 6.1
+	path.separator = ;
+	program.name = JBossTools: Red Hat JBoss EAP7.2
+	sun.arch.data.model = 64
+	sun.boot.class.path = C:\Program Files\Java\jre1.8.0_211\lib\resources.jar;C:\Program Files\Java\jre1.8.0_211\lib\rt.jar;C:\Program Files\Java\jre1.8.0_211\lib\sunrsasign.jar;C:\Program Files\Java\jre1.8.0_211\lib\jsse.jar;C:\Program Files\Java\jre1.8.0_211\lib\jce.jar;C:\Program Files\Java\jre1.8.0_211\lib\charsets.jar;C:\Program Files\Java\jre1.8.0_211\lib\jfr.jar;C:\Program Files\Java\jre1.8.0_211\classes
+	sun.boot.library.path = C:\Program Files\Java\jre1.8.0_211\bin
+	sun.cpu.endian = little
+	sun.cpu.isalist = amd64
+	sun.desktop = windows
+	sun.io.unicode.encoding = UnicodeLittle
+	sun.java.command = org.jboss.modules.Main -mp C:\ajboss-eap-7.2\modules org.jboss.as.standalone -b localhost --server-config=standalone.xml -Djboss.server.base.dir=C:\ajboss-eap-7.2\standalone
+	sun.java.launcher = SUN_STANDARD
+	sun.jnu.encoding = Cp1252
+	sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+	sun.os.patch.level = Service Pack 1
+	sun.rmi.dgc.client.gcInterval = 3600000
+	sun.rmi.dgc.server.gcInterval = 3600000
+	user.country = MX
+	user.dir = C:\ajboss-eap-7.2\bin
+	user.home = C:\Users\engel
+	user.language = es
+	user.name = engel
+	user.script = 
+	user.timezone = America/Mexico_City
+	user.variant = 
+2019-06-04 13:40:07 [DEBUG] config:115 - Argumentos de VM: -Dprogram.name=JBossTools: Red Hat JBoss EAP7.2 -Xms1303m -Xmx1303m -XX:MetaspaceSize=96M -XX:MaxMetaspaceSize=256m -Dorg.jboss.resolver.warning=true -Djava.net.preferIPv4Stack=true -Dsun.rmi.dgc.client.gcInterval=3600000 -Dsun.rmi.dgc.server.gcInterval=3600000 -Djboss.modules.system.pkgs=org.jboss.byteman -Djava.awt.headless=true -Dorg.jboss.boot.log.file=C:\ajboss-eap-7.2\standalone\log\boot.log -Dlogging.configuration=file:C:\ajboss-eap-7.2\standalone\configuration\logging.properties -Djboss.home.dir=C:\ajboss-eap-7.2 -Dorg.jboss.logmanager.nocolor=true -Djboss.bind.address.management=localhost -Dfile.encoding=Cp1252 
+2019-06-04 13:40:09 [INFO ] security:57 - ELY00001: WildFly Elytron version 1.6.1.Final-redhat-00001
+2019-06-04 13:40:09 [WARN ] infinispan:1017 - WFLYCLINF0004: El atributo 'strategy' del elemento 'eviction' ya no recibe soporte y será ignorado.
+2019-06-04 13:40:09 [WARN ] infinispan:1017 - WFLYCLINF0004: El atributo 'strategy' del elemento 'eviction' ya no recibe soporte y será ignorado.
+2019-06-04 13:40:10 [INFO ] management-deprecated:505 - WFLYCTL0028: El atributo 'security-realm' en el recurso en la dirección '/core-service=management/management-interface=http-interface' quedó obsoleto y quizás sea retirado en una versión futura. Consulte la descripción de atributos en la salida de la operación read-resource-description para aprender más sobre la depreciación.
+2019-06-04 13:40:10 [INFO ] management-deprecated:505 - WFLYCTL0028: El atributo 'security-realm' en el recurso en la dirección '/subsystem=undertow/server=default-server/https-listener=https' quedó obsoleto y quizás sea retirado en una versión futura. Consulte la descripción de atributos en la salida de la operación read-resource-description para aprender más sobre la depreciación.
+2019-06-04 13:40:10 [INFO ] scanner:900 - WFLYDS0015: Re-intentando la implementación fallida netcas.war
+2019-06-04 13:40:10 [INFO ] scanner:613 - WFLYDS0004: Se encontró netcas.war en el directorio de implementación. Para disparar la implementación cree un archivo llamado netcas.war.dodeploy
+2019-06-04 13:40:10 [INFO ] server:122 - WFLYSRV0039: Creando el servicio de administración http utilizando el enlace de socket (management-http) 
+2019-06-04 13:40:10 [INFO ] xnio:95 - XNIO version 3.6.5.Final-redhat-00001
+2019-06-04 13:40:10 [INFO ] infinispan:54 - WFLYCLINF0001: Activando el sub-sistema Infinispan.
+2019-06-04 13:40:10 [INFO ] connector:55 - WFLYJCA0009: Iniciando JCA sub-sistema (WildFly/IronJacamar 1.4.11.Final-redhat-00001)
+2019-06-04 13:40:10 [INFO ] nio:59 - XNIO NIO Implementation Version 3.6.5.Final-redhat-00001
+2019-06-04 13:40:10 [WARN ] txn:547 - WFLYTX0013: El atributo node-identifier del /subsystem=transactions está configurado como el valor predeterminado. Esto es peligroso para los entornos que ejecutan varios servidores. Asegúrese de que el valor del atributo sea único.
+2019-06-04 13:40:10 [INFO ] webservices:73 - WFLYWS0002: Activando WebServices Extension
+2019-06-04 13:40:10 [INFO ] jaxrs:60 - WFLYRS0016: RESTEasy versión 3.6.1.SP2-redhat-00001
+2019-06-04 13:40:10 [INFO ] naming:71 - WFLYNAM0001: Activando el sub-sistema de nombrado
+2019-06-04 13:40:10 [INFO ] jsf:71 - WFLYJSF0007: Se activaron las siguientes implementaciones JSF: [main]
+2019-06-04 13:40:10 [INFO ] datasources:171 - WFLYJCA0004: Implementación del controlador que cumple con los requerimientos de JDBC class org.h2.Driver (versión 1.4)
+2019-06-04 13:40:10 [INFO ] jdbc:68 - WFLYJCA0018: Servicio de controlador iniciado con driver-name = h2
+2019-06-04 13:40:11 [INFO ] naming:75 - WFLYNAM0003: Iniciando el servicio de nombrado
+2019-06-04 13:40:11 [INFO ] undertow:180 - WFLYUT0003: Undertow 2.0.15.Final-redhat-00001 iniciando
+2019-06-04 13:40:11 [INFO ] security:159 - WFLYSEC0002: Activando el sub-sistema de seguridad
+2019-06-04 13:40:11 [INFO ] datasources:171 - WFLYJCA0004: Implementación del controlador que cumple con los requerimientos de JDBC class oracle.jdbc.driver.OracleDriver (versión 12.1)
+2019-06-04 13:40:11 [INFO ] jdbc:68 - WFLYJCA0018: Servicio de controlador iniciado con driver-name = oracle
+2019-06-04 13:40:11 [INFO ] security:101 - WFLYSEC0001: Versión PicketBox actual=5.0.3.Final-redhat-3
+2019-06-04 13:40:11 [INFO ] extension:150 - WFLYMAIL0002: Sesión de correo desenlazada [java:jboss/mail/Default]
+2019-06-04 13:40:11 [INFO ] datasources:430 - WFLYJCA0010: Fuente de datos desenlazados [java:jboss/jdbc/poolOrclNetcasProd]
+2019-06-04 13:40:11 [INFO ] datasources:430 - WFLYJCA0010: Fuente de datos desenlazados [java:jboss/datasources/ExampleDS]
+2019-06-04 13:40:11 [INFO ] extension:146 - WFLYMAIL0001: Sesión de correo enlazada [java:jboss/mail/Default]
+2019-06-04 13:40:11 [INFO ] io:202 - WFLYIO001: Worker 'default' ha configurado automáticamente los hilos de núcleo 8 con los hilos de tareas 64 en base a los procesadores 4 disponibles.
+2019-06-04 13:40:11 [INFO ] ejb3:103 - WFLYEJB0482: El grupo estricto mdb-strict-max-pool utiliza un tamaño de instancia máximo de 16 (por clase), el cual se deriva del número de CPUs en este host. 
+2019-06-04 13:40:11 [INFO ] ejb3:98 - WFLYEJB0481: El grupo estricto (slsb-strict-max-pool utiliza un tamaño de instancia máximo de 64 (por clase), el cual se deriva del tamaño de grupo del Worker de hilos. 
+2019-06-04 13:40:11 [INFO ] undertow:118 - WFLYUT0014: Creación de controlador de archivos para la ruta de acceso 'C:\ajboss-eap-7.2/welcome-content' con las opciones s [directory-listing: 'false', follow-symlink: 'false', case-sensitive: 'true', safe-symlink-paths: '[]']
+2019-06-04 13:40:12 [INFO ] undertow:75 - WFLYUT0012: El servidor ha iniciado default-server.
+2019-06-04 13:40:12 [INFO ] remoting:99 - JBoss Remoting version 5.0.8.Final-redhat-1
+2019-06-04 13:40:12 [INFO ] undertow:154 - WFLYUT0018: Host default-host iniciando
+2019-06-04 13:40:12 [INFO ] patching:82 - WFLYPAT0050: El ID de parche acumulativo JBoss EAP es: base, parches one-off incluyen: none
+2019-06-04 13:40:12 [INFO ] scanner:402 - WFLYDS0013: Inició FileSystemDeploymentService para el directorio C:\ajboss-eap-7.2\standalone\deployments
+2019-06-04 13:40:12 [WARN ] security:161 - WFLYDM0111: No se encontró el KeyStore C:\ajboss-eap-7.2\standalone\configuration\application.keystore, será autogenerado durante la primera utilización con un certificado firmado automáticamente para el host localhost
+2019-06-04 13:40:12 [INFO ] deployment:86 - WFLYSRV0027: Iniciando la implementación de netcas.war" (runtime-name: "netcas.war")
+2019-06-04 13:40:12 [INFO ] undertow:110 - WFLYUT0006: Undertow HTTP oyente default escuchando en 127.0.0.1:8080
+2019-06-04 13:40:12 [INFO ] ejb3:321 - WFLYEJB0493: Suspensión del subsistema de EJB completa
+2019-06-04 13:40:12 [INFO ] datasources:422 - WFLYJCA0001: Fuente de datos enlazados [java:jboss/datasources/ExampleDS]
+2019-06-04 13:40:12 [INFO ] datasources:422 - WFLYJCA0001: Fuente de datos enlazados [java:jboss/jdbc/poolOrclNetcasProd]
+2019-06-04 13:40:13 [INFO ] undertow:148 - WFLYUT0006: Undertow HTTPS oyente https escuchando en 127.0.0.1:8443
+2019-06-04 13:40:13 [INFO ] management:340 - JBWS022052: Starting JBossWS 5.2.4.Final-redhat-00001 (Apache CXF 3.2.5.redhat-00001) 
+2019-06-04 13:40:19 [WARN ] ee:98 - WFLYEE0007: No se está instalando el componente opcional org.springframework.http.server.reactive.ServletServerHttpRequest$RequestAsyncListener debido a una excepción (active el nivel de registro DEBUG para ver la razón)
+2019-06-04 13:40:19 [WARN ] ee:98 - WFLYEE0007: No se está instalando el componente opcional org.springframework.http.server.ServletServerHttpAsyncRequestControl debido a una excepción (active el nivel de registro DEBUG para ver la razón)
+2019-06-04 13:40:19 [WARN ] ee:98 - WFLYEE0007: No se está instalando el componente opcional org.springframework.web.context.request.async.StandardServletAsyncWebRequest debido a una excepción (active el nivel de registro DEBUG para ver la razón)
+2019-06-04 13:40:19 [WARN ] ee:98 - WFLYEE0007: No se está instalando el componente opcional org.springframework.http.server.reactive.ServletServerHttpResponse$ResponseAsyncListener debido a una excepción (active el nivel de registro DEBUG para ver la razón)
+2019-06-04 13:40:19 [WARN ] ee:98 - WFLYEE0007: No se está instalando el componente opcional org.springframework.http.server.reactive.ServletHttpHandlerAdapter$HandlerResultAsyncListener debido a una excepción (active el nivel de registro DEBUG para ver la razón)
+2019-06-04 13:40:20 [INFO ] jdbc:70 - WFLYJCA0004: Implementación del controlador que cumple con los requerimientos de JDBC class oracle.jdbc.OracleDriver (versión 12.1)
+2019-06-04 13:40:20 [WARN ] deployer:115 - WFLYWELD0013: La implementación netcas.war contiene anotaciones de CDI, pero no se encontró ningún archivo bean (beans.xml o clase con anotaciones de definición de beans).
+2019-06-04 13:40:20 [INFO ] jdbc:68 - WFLYJCA0018: Servicio de controlador iniciado con driver-name = netcas.war_oracle.jdbc.OracleDriver_12_1
+2019-06-04 13:40:20 [INFO ] GlobalComponentRegistry:254 - ISPN000128: Infinispan version: Infinispan 'Estrella Galicia' 9.3.3.Final-redhat-00001
+2019-06-04 13:40:20 [INFO ] infinispan:138 - WFLYCLINF0002: Inició client-mappings caché del contenedor ejb 
+2019-06-04 13:40:20 [INFO ] servlet:364 - 2 Spring WebApplicationInitializers detected on classpath
+2019-06-04 13:40:20 [INFO ] config:223 - Inicializando Mojarra 2.3.5.SP2-redhat-00001 para el contexto '/netcas'
+2019-06-04 13:40:25 [INFO ] servlet:364 - Initializing Spring root WebApplicationContext
+2019-06-04 13:40:25 [INFO ] ContextLoader:270 - Root WebApplicationContext: initialization started
+2019-06-04 13:40:27 [INFO ] Version:46 - HHH000412: Hibernate Core {5.4.0.Final}
+2019-06-04 13:40:27 [INFO ] Environment:199 - HHH000206: hibernate.properties not found
+2019-06-04 13:40:28 [INFO ] Version:49 - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2019-06-04 13:40:28 [WARN ] OnePool:638 - IJ000407: No lazy enlistment available for poolOrclNetcasProd
+2019-06-04 13:40:28 [INFO ] Dialect:158 - HHH000400: Using dialect: org.hibernate.dialect.Oracle12cDialect
+2019-06-04 13:40:30 [INFO ] BasicTypeRegistry:159 - HHH000270: Type registration [byte[]] overrides previous : org.hibernate.type.BinaryType@4cf5d1d3
+2019-06-04 13:40:30 [INFO ] BasicTypeRegistry:159 - HHH000270: Type registration [[B] overrides previous : org.hibernate.type.BinaryType@4cf5d1d3
+2019-06-04 13:40:30 [INFO ] BasicTypeRegistry:159 - HHH000270: Type registration [Byte[]] overrides previous : org.hibernate.type.WrapperBinaryType@4fd36413
+2019-06-04 13:40:30 [INFO ] BasicTypeRegistry:159 - HHH000270: Type registration [[Ljava.lang.Byte;] overrides previous : org.hibernate.type.WrapperBinaryType@4fd36413
+2019-06-04 13:40:30 [INFO ] Version:21 - HV000001: Hibernate Validator 6.0.14.Final-redhat-00001
+2019-06-04 13:40:32 [INFO ] JtaPlatformInitiator:52 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.WildFlyStandAloneJtaPlatform]
+2019-06-04 13:40:33 [INFO ] QueryTranslatorFactoryInitiator:47 - HHH000397: Using ASTQueryTranslatorFactory
+2019-06-04 13:40:33 [INFO ] stdout:71 - 2019-06-04 13:40:33 [ERROR] ConsultServiceImpl:304 - Parámetro GET_CRQ_REMEDY_JOB INACTIVO.
+2019-06-04 13:40:33 [INFO ] stdout:71 - 2019-06-04 13:40:33 [ERROR] ConsultServiceImpl:304 - Parámetro PASSWORD_CHANGE_JOB INACTIVO.
+2019-06-04 13:40:34 [INFO ] DefaultSecurityFilterChain:43 - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2346ff26, org.springframework.security.web.context.SecurityContextPersistenceFilter@77c65f7a, org.springframework.security.web.header.HeaderWriterFilter@58ed69bb, org.springframework.security.web.authentication.logout.LogoutFilter@5f4fb39d, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@728c5608, org.springframework.security.web.session.ConcurrentSessionFilter@282ed590, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@18d70eb0, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@735e39bf, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@313b5d7b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2e6711b0, org.springframework.security.web.session.SessionManagementFilter@78d26810, org.springframework.security.web.access.ExceptionTranslationFilter@521e0306, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1d6f42e1]
+2019-06-04 13:40:34 [INFO ] ThreadPoolTaskExecutor:171 - Initializing ExecutorService
+2019-06-04 13:40:34 [INFO ] ThreadPoolTaskExecutor:171 - Initializing ExecutorService 'asyncExecutor'
+2019-06-04 13:40:34 [INFO ] StdSchedulerFactory:1208 - Using default implementation for ThreadExecutor
+2019-06-04 13:40:34 [INFO ] SchedulerSignalerImpl:61 - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2019-06-04 13:40:34 [INFO ] QuartzScheduler:229 - Quartz Scheduler v.2.3.0 created.
+2019-06-04 13:40:34 [INFO ] RAMJobStore:155 - RAMJobStore initialized.
+2019-06-04 13:40:34 [INFO ] QuartzScheduler:294 - Scheduler meta-data: Quartz Scheduler (v2.3.0) 'schedulerFactoryBean' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2019-06-04 13:40:34 [INFO ] StdSchedulerFactory:1362 - Quartz scheduler 'schedulerFactoryBean' initialized from an externally provided properties instance.
+2019-06-04 13:40:34 [INFO ] StdSchedulerFactory:1366 - Quartz scheduler version: 2.3.0
+2019-06-04 13:40:34 [INFO ] QuartzScheduler:2287 - JobFactory set to: org.springframework.scheduling.quartz.AdaptableJobFactory@6c2bbd27
+2019-06-04 13:40:34 [INFO ] SchedulerFactoryBean:723 - Starting Quartz Scheduler now
+2019-06-04 13:40:34 [INFO ] QuartzScheduler:547 - Scheduler schedulerFactoryBean_$_NON_CLUSTERED started.
+2019-06-04 13:40:34 [INFO ] ContextLoader:306 - Root WebApplicationContext initialized in 9634 ms
+2019-06-04 13:40:35 [INFO ] servlet:364 - Initializing Spring DispatcherServlet 'dispatcher'
+2019-06-04 13:40:35 [INFO ] DispatcherServlet:521 - Initializing Servlet 'dispatcher'
+2019-06-04 13:40:36 [INFO ] TilesAccess:93 - Publishing TilesContext for context: org.springframework.web.servlet.view.tiles3.SpringWildcardServletTilesApplicationContext
+2019-06-04 13:40:36 [INFO ] DispatcherServlet:543 - Completed initialization in 1610 ms
+2019-06-04 13:40:36 [INFO ] undertow:266 - WFLYUT0021: Contexto de Web registrado: '/netcas' para el servidor 'default-server'
+2019-06-04 13:40:36 [INFO ] server:173 - WFLYSRV0010: Implementado "netcas.war" (runtime-name : "netcas.war")
+2019-06-04 13:40:36 [INFO ] server:116 - WFLYSRV0212: Reanudando el servidor
+2019-06-04 13:40:36 [INFO ] as:159 - WFLYSRV0060: Interfaz de administración http escuchando en http://127.0.0.1:9990/management
+2019-06-04 13:40:36 [INFO ] as:161 - WFLYSRV0051: Consola de administración escuchando en http://127.0.0.1:9990
+2019-06-04 13:40:36 [INFO ] as:109 - WFLYSRV0025: JBoss EAP 7.2.0.GA (WildFly Core 6.0.11.Final-redhat-00001) inició en 30168ms - Inició 914 de 1099 servicios (329 servicios son perezosos, pasivos o por demanda)
+2019-06-04 13:42:00 [INFO ] stdout:71 - 2019-06-04 13:42:00 [ERROR] TUsuarioDAOImpl:273 - NO se encontro usuario
+2019-06-04 13:46:24 [INFO ] stdout:71 - 2019-06-04 13:46:24 [ERROR] TUsuarioDAOImpl:416 - NO existe registro de sesion.

@@ -1,0 +1,14 @@
+<?xml version="1.0" ?>
+
+<installation xmlns="urn:jboss:galleon:provisioning:2.0">
+    <transitive>
+        <feature-pack location="eap-core@maven(org.jboss.universe:product-universe):current#6.0.11.Final-redhat-00001"/>
+        <feature-pack location="eap-servlet@maven(org.jboss.universe:product-universe):current#7.2.0.GA-redhat-00005"/>
+    </transitive>
+    <feature-pack location="jboss-server-migration-eap@maven(org.jboss.universe:product-universe):current#1.3.0.Final-redhat-00003"/>
+    <feature-pack location="eap@maven(org.jboss.universe:product-universe):current#7.2.0.GA-redhat-00005">
+        <packages>
+            <include name="docs.examples.configs"/>
+        </packages>
+    </feature-pack>
+</installation>

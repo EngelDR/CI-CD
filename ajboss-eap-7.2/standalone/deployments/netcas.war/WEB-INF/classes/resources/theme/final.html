@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>NetCAS</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="images/telcel.ico" />
+    <link rel="stylesheet" media="screen" href="lib/bootstrap-3.3.7/css/bootstrap.min.css" />
+    <link rel="stylesheet" media="screen" href="lib/font-awesome-4.7.0/css/font-awesome.min.css" />
+    
+    <link rel="stylesheet" type="text/css" href="lib/data-tables/datatables.min.css" />
+    <link rel="stylesheet" type="text/css" href="lib/data-tables/data-tables-1.10.16/css/dataTables.bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="lib/data-tables/buttons-1.5.1/css/buttons.bootstrap.min.css" />
+
+	<link href="lib/bootstrap-3.3.7/css/bootstrap-switch.css" rel="stylesheet" media="screen">
+	<link href="lib/toastr/toastr.css" rel="stylesheet" media="screen">
+	<link href="lib/chosen/chosen.min.css" rel="stylesheet" media="screen">
+	<link href="lib/data-range-picker/css/daterangepicker.css" rel="stylesheet" media="screen">
+
+    <link rel="stylesheet" media="screen" href="css/application.css" />
+</head>
+
+<body>
+    <div id="wrapper">
+        <!--Header-->
+        <nav class="navbar navbar-default n-header" role="navigation">
+            <a class='navbar-brand' href='#'><i class='fa fa-beer'></i>NetCAS</a>
+            <ul class='nav navbar-nav pull-right'>
+                <li class='dropdown user'>
+                    <a class='dropdown-toggle' data-toggle='dropdown' href='#'>
+                        <i class='fa fa-user'></i> 
+                        	<strong>
+                        		ANGEL DIAZ ROSAS
+                        	</strong> 
+                        <b class='caret'></b>
+                    </a>
+                    <ul class='dropdown-menu'>
+                        <li><a href='#'>Edit Profile</a></li>
+                        <li class='divider'></li>
+                        <li><a href="/netcas/logout.htm">Sign out</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+	
+
+
+
+  
+
+		
+        <!--Contenedor Primario-->
+        <div class="container-fluid n-c-primary">
+            <!--Toggle button-->
+            <nav class="row n-toggle"><div id="n-toggle-button" class="fa fa-bars fa-2x "></div></nav>
+
+            <!--Menú superior-->
+            <nav class="row n-top-content">
+                <div class="col-sm-11 n-top-menu">
+                    <ul class="nav navbar-nav">
+                        
+            			<li><a href="/netcas/users.htm">Usuarios</a></li>
+		 				
+
+						
+		            	<li class="dropdown">
+							<a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                COR  <b class='caret'></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="/netcas/cor/admin/platforms.htm"> Plataforma</a></li>
+                                <li class="divider"></li>
+                                <li><a href="/netcas/cor/admin/standar.htm"> Comando</a></li>
+                                <li class="divider"></li>
+                                <li><a href="/netcas/cor/admin/report.htm"> Reporte</a></li>
+                            </ul>
+                        </li>
+				 		
+		 		
+                        
+		            	<li class="dropdown">
+							<a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                RI  <b class='caret'></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="/netcas/ri/admin/platforms.htm"> Plataforma</a></li>
+                                <li class="divider"></li>
+                                <li><a href="/netcas/ri/admin/standar.htm"> Comando</a></li>
+                                <li class="divider"></li>
+                                <li><a href="/netcas/ri/admin/report.htm"> Reporte</a></li>
+                            </ul>
+                        </li>
+				 		
+                        
+                        
+		            	<li><a href="/netcas/administration/remedy.htm">Remedy</a></li>
+			            <li><a href="/netcas/administration/report.htm">Reporte</a></li>
+			            <li><a href="/netcas/administration/activityLog.htm">Bitacora</a></li>
+				 		
+				 		                
+		                
+		                <li class="dropdown">
+							<a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                Ayuda  <b class='caret'></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="/netcas/support.htm">Soporte</a></li>
+                                <li class="divider"></li>
+                                <li><a href="/netcas/incidence.htm">Incidente</a></li>
+                                <li class="divider"></li>
+                            </ul>
+                        </li>
+				 		
+                    </ul>
+                </div>
+            </nav>
+            <!--Contenedor secundario-->
+            <div class="row row-eq-height n-body-content">
+
+                <!--Menú lateral-->
+                <div class="col-sm-1 sidenav">
+                    <ul class="nav nav-pills nav-stacked">
+                    	
+						<li id="menu1"><a href="/netcas/dashboard.htm"><i class="fa fa-tachometer"></i><p>Tablero</p></a></li>
+						
+                        
+                        
+		            	<li id="menu2" class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                <i class="fa fa-youtube"></i><p>CRQ</p><b class='caret'></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="/netcas/consultCrq.htm"> Consultar</a></li>
+                                <li class="divider"></li>
+                            </ul>
+                        <li>
+						
+						
+						
+						<li id="menu3"><a href="/netcas/administration/notificationCrq.htm"><i class="fa fa-bell"></i><p>Notificación</p></a></li>
+		            	
+				
+						
+			            <li id="menu4" class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                <i class="fa fa-google"></i><p>TEST</p><b class='caret'></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="/netcas/test.htm">Plataformas</a></li>
+                                <li class="divider"></li>
+                            </ul>
+                        <li>
+						
+                    </ul>
+                </div>
+                
+   	
+<style type="text/css">
+  .nav-tabs>li>a {
+	color: #148f77;
+	font-weight: bold;
+	margin-right: 2px;
+	line-height: 1.42857143;
+	border: 1px solid #138a73 transparent;
+	min-height: 0px;
+	border-radius: 4px 4px 0 0;
+}
+</style>
+<!--Wrapper body: contenedor principal-->
+                <div class="col-sm-11 page-wrapper table-responsive">
+
+                    <!--Inicio de panel se le coloca el id para identificar el panel en el que se encuentra-->
+                    <div id="page6" class="col-sm-12">
+                        
+                    
+<!-- start: DYNAMIC TABLE PANEL -->
+	<div class="panel panel-white">
+		<!-- Nav tabs -->
+		<ul class="nav nav-tabs" role="tablist">
+			<li role="presentation" id="p1" class="active"><a href="#tabla1" aria-controls="tabla1" role="tab" data-toggle="tab">PLATAFORMAS</a></li>
+			<li style="color: #148f77"role="presentation" id="p2"><a href="#tabla2" aria-controls="tabla2" role="tab" data-toggle="tab">NODOS</a></li>
+		</ul>
+		<br>
+		<!-- Tab panes -->
+		<div class="tab-content">
+			<!-- TABLA 1-->
+			<div role="tabpanel" class="tab-pane active" id="tabla1">
+				<table class='table table-striped table-bordered table-hover table-full-width small' id="tblplataform">
+					<thead>
+						<tr>                
+							<th>Nombre</th>
+							<th>Usuario</th>
+							<th>IP</th>
+							<th>IP Auxiliar</th>
+							<th>Puerto</th>
+							<th>Región</th>
+							<th>Conexión</th>
+							<th>Tecnologia</th>
+							<th>Estatus</th>
+							<th>Acciones</th>
+						</tr>
+					</thead>
+				</table>
+				<div class="modal-footer">
+					<button id="newPlatform" class="btn btn-primary">
+						<span class="glyphicon glyphicon-plus"></span> Nueva Plataforma
+					</button>
+				</div>
+			</div>
+			<!-- TABLA 2 -->
+			<div role="tabpanel" class="tab-pane" id="tabla2">
+				<table class='table table-striped table-bordered table-hover table-full-width small' id="tblNode">
+					<thead>
+						<tr>
+							<th>Región</th>
+							<th>Nombre</th>
+							<th>Ip</th>
+							<th>Usuario</th>
+							<th>Estatus</th>
+							<th>Plataforma</th>
+							<th>Pool</th>
+							<th>Acciones</th>
+						</tr>
+					</thead>
+				</table>
+				<div class="modal-footer">
+					<button id="newNode" class="btn btn-primary">
+						<span class="glyphicon glyphicon-plus"></span> Nuevo Nodo
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+<!-- end: DYNAMIC TABLE PANEL -->
+
+
+</div>
+                </div>
+                
+                
+                
+
+<!--  start: MODAL NUEVA PLATAFORMA/NODE -->
+	<div id="modalPlataformNode" class="modal fade">			
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<a href="" class="close" data-dismiss="modal" aria-hidden="true"><span class="glyphicon glyphicon-remove"></span></a>
+					<h4 class="modal-title" id="allTitle">Agregar nueva plataforma</h4>
+				</div>
+				<div class="modal-body">							
+					<div class="form-content">
+						<div class="form-group">
+							<div class="row">
+								<div class="form-group col-sm-6">
+									<input type="hidden" id="IdPlatformNode">
+									<label for="Nombre" class="control-label">Nombre:</label>
+									<input type="text" class="form-control" id="Nombre" placeholder="Nombre de plataforma.." maxlength="15" required oninvalid="setCustomValidity('El nombre es requerido')" oninput="setCustomValidity('')">
+								</div>
+								<div class="form-group col-sm-6">
+									<label for="Region" class="control-label">Región:</label>
+									<select class="form-control" id="Region" data-placeholder="Seleccione Región.." class="form-control chosen-select" required oninvalid="setCustomValidity('La región es requerida')" oninput="setCustomValidity('')"></select>											
+								</div>
+								<div class="form-group col-sm-6" id="allTipo">
+							    	<label for="Tipo" class="control-label">Tipo:</label>
+							    	<input type="text" class="form-control" id="Tipo" placeholder="Introduzca un Tipo valido.."  maxlength="4" required oninvalid="setCustomValidity('El Tipo es requerido')" oninput="setCustomValidity('')">
+						   		</div>
+								<div class="form-group col-sm-6" id="allIP">
+						        	<label for="IP" class="control-label">IP:</label>
+						            <input type="text" class="form-control" id="IP" placeholder="Ingrese una IP.." maxlength="16" pattern="((^|\.)((25[0-5])|(2[0-4]\d)|(1\d\d)|([1-9]?\d))){4}$" required oninvalid="setCustomValidity('El formato de la IP no es válida')" oninput="setCustomValidity('')">
+								</div>
+								<div class="form-group col-sm-6" id="allIPaux">
+						        	<label for="IPaux" class="control-label">IP Auxiliar:</label>
+						        	<input type="text" class="form-control" id="IPaux" placeholder="Ingrese una IP Secundaria.." maxlength="16" pattern="((^|\.)((25[0-5])|(2[0-4]\d)|(1\d\d)|([1-9]?\d))){4}$" required oninvalid="setCustomValidity('El formato de la IP no es válida')" oninput="setCustomValidity('')">
+						  		</div>
+						      	<div class="form-group col-sm-6">
+							    	<label for="Usuario" class="control-label">Usuario:</label>
+							    	<input type="text" class="form-control" id="Usuario" placeholder="Introduzca un Usuario valido.."  maxlength="40" required oninvalid="setCustomValidity('El usuario es requerido')" oninput="setCustomValidity('')">
+						   		</div>
+								<div class="form-group col-sm-6">
+									<label for="Contrasena" class="control-label">Contraseña:</label>
+									<input type="password" class="form-control" id="Contrasena" placeholder="Introduzca Contraseña.."	maxlength="15" required	oninvalid="setCustomValidity('La contraseña es requerida')" oninput="setCustomValidity('')">
+								</div>
+								<div class="form-group col-sm-6" id="allPuerto">
+							    	<label for="Puerto" class="control-label">Puerto:</label>
+							    	<input type="text" class="form-control" id="Puerto" placeholder="Introduzca un Puerto valido.."  maxlength="2" required oninvalid="setCustomValidity('El usuario es requerido')" oninput="setCustomValidity('')">
+						   		</div>
+								<div class="form-group col-sm-6" id="allConexiones">
+									<label for="selectConexion" class="control-label">Conexión:</label> 
+									<select class="form-control" id="selectConexion" data-placeholder="Seleccione Conexión.." class="form-control chosen-select" required oninvalid="setCustomValidity('No ha seleccionado ninguna conexión')" oninput="setCustomValidity('')"></select> 
+								</div>
+								<div class="form-group col-sm-6" id ="allPlataformas">
+									<label for="selectPlataforma" class="control-label">Plataforma:</label> 
+									<select class="form-control" id="selectPlataforma" data-placeholder="Seleccione Plataforma.." class="form-control chosen-select" required oninvalid="setCustomValidity('No ha seleccionado ninguna plataforma')" oninput="setCustomValidity('')"></select> 
+								</div>
+								<div class="form-group col-sm-6" id="allPool">
+						           	<label for="Pool">Pool:</label><br>
+									<input id="Pool" type="checkbox" data-on-text="<i class='fa fa-check'>" data-off-text="<i class='fa fa-times'>"> 
+								</div>
+								<div class="form-group col-sm-6" id="allTecnologias">
+									<label for="selectTecnologia" class="control-label">Tecnología:</label> 
+									<select class="form-control" id="selectTecnologia" data-placeholder="Seleccione Tecnología.." class="form-control chosen-select" required oninvalid="setCustomValidity('No ha seleccionado ninguna tecnología')" oninput="setCustomValidity('')"></select> 
+								</div>
+								<div class="form-group col-sm-6">
+									<label for="selectEstatus" class="control-label">Estatus:</label> 
+				 					<select class="form-control" id="selectEstatus" data-placeholder="Seleccione Estatus.." class="form-control chosen-select" required oninvalid="setCustomValidity('No ha seleccionado ninguna tecnología')" oninput="setCustomValidity('')"></select> 
+								</div>
+								<div class="form-group col-sm-6" id="allUrlXml">
+									<label for="UrlXml" class="control-label">URL XML:</label>
+									<input type="text" class="form-control" id="UrlXml" placeholder="Introduzca una ruta válida..">
+								</div>
+								<div class="form-group col-sm-6" id="allUrlLog">
+									<label for="UrlLog" class="control-label">URL LOG:</label>
+									<input type="text" class="form-control" id="UrlLog" placeholder="Introduzca una ruta válida..">
+								</div>
+								<div class="form-group col-sm-6" id="allUrlFisica">
+									<label for="UrlFisica" class="control-label">URL FISICA:</label>
+									<input type="text" class="form-control" id="UrlFisica" placeholder="Introduzca una ruta válida..">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<div id="newButtons">
+						<button onclick="mPlataformNode('new');" class="btn btn-primary"> <span class="glyphicon glyphicon-ok"></span> Guardar </button>	
+					</div>
+					<div id="editButtons">
+						<button onclick="mPlataformNode('delete');" class="btn btn-secondary"> <span class="glyphicon glyphicon-remove"></span> Eliminar </button>		
+						<button onclick="mPlataformNode('edit');" class="btn btn-primary"> <span class="glyphicon glyphicon-ok"></span> Guardar </button>		
+					</div>	
+				</div>		
+			</div>
+		</div>			
+	</div>
+<!-- end: MODAL NUEVA PLATAFORMA -->
+
+
+    
+
+
+
+  
+        
+            </div>
+        </div>
+    </div>
+    <footer class="container-fluid">
+        <p>2017 Radiomovil Dipsa S.A. de C.V. Todos los derechos reservados OYM. Sitio desarrollado para Internet Explorer 11 y Google Chrome. Resolución óptima 1024x768px</p>
+    </footer>
+    
+    <script src="lib/data-tables/datatables.min.js"></script>
+    
+    <script src="lib/jquery-2.1.4/jquery-2.1.4.js"></script>    
+    <script src="lib/bootstrap-3.3.7/js/bootstrap.min.js"></script>
+    
+    <script src="lib/data-tables/data-tables-1.10.16/js/jquery.dataTables.min.js"></script>
+    <script src="lib/data-tables/data-tables-1.10.16/js/dataTables.bootstrap.min.js"></script>
+    
+    <script src="lib/data-tables/buttons-1.5.1/js/dataTables.buttons.min.js"></script>
+    <script src="lib/data-tables/buttons-1.5.1/js/buttons.bootstrap.min.js"></script>
+    
+    <script src="lib/data-tables/js-zip-2.5.0/jszip.min.js"></script>
+    <script src="lib/data-tables/pdfmake-0.1.32/pdfmake.min.js"></script>
+    <script src="lib/data-tables/pdfmake-0.1.32/vfs_fonts.js"></script>
+    <script src="lib/data-tables/buttons-1.5.1/js/buttons.html5.min.js"></script>
+    <script src="lib/data-tables/buttons-1.5.1/js/buttons.print.min.js"></script>
+    <script src="lib/data-tables/buttons-1.5.1/js/buttons.colVis.min.js"></script>
+
+
+	<script src="js/application.js"></script>
+
+	<script src="lib/bootstrap-3.3.7/js/bootstrap-switch.min.js"></script>
+	<script src="lib/bootstrap-3.3.7/js/bootbox.min.js"></script>
+	<script src="lib/toastr/toastr.min.js"></script>
+	<script src="lib/jquery-2.1.4/jquery.blockUI.js"></script>
+	<script src="lib/chosen/chosen.jquery.js"></script>
+	<script src="lib/data-range-picker/js/moment.min.js"></script>
+	<script src="lib/data-range-picker/js/daterangepicker.js"></script>
+	
+	<!-- Amcharts Gráfica -->
+	<script src="lib/amcharts/amcharts.js"></script>
+	<script src="lib/amcharts/serial.js"></script>
+	<script src="lib/amcharts/export.min.js"></script>
+	<link href="lib/amcharts/export.css" rel="stylesheet" media="screen">
+	<script src="lib/amcharts/light.js"></script>
+	<script src="lib/amcharts/FileSaver.min.js"></script>
+	<script src="lib/amcharts/fabric.min.js"></script>
+	 
+	
+	
+</body>
+
+</html>
+	
